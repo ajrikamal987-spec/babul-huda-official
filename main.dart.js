@@ -10489,68 +10489,65 @@ fE(a,b,c){var s=b.h(0,c)
 if(s==null||s>=a.length)return null
 return a[s]},
 bdJ(a){return B.b.dw(a,new A.aZ5())},
-bz4(c7,c8){var s,r,q,p,o,n,m,l,k,j,i,h,g,f,e,d,c,b,a,a0,a1,a2,a3,a4,a5,a6,a7,a8,a9,b0,b1,b2,b3,b4,b5,b6=null,b7="nama santri",b8="tanggal lahir",b9='" tidak bisa dibaca \u2014 dikosongkan.',c0="tempat lahir",c1='): Tanggal Lahir "',c2=A.b([],t.s),c3=t.dk,c4=A.b([],c3),c5=t.S,c6=A.u(c5,t.A6)
-if(c7.length<=3)return new A.YD(B.a2S,B.a5h,0,0)
-s=A.bem(c7[3])
-if(!s.al(0,b7))c2.push('Header "Nama Santri" tidak ditemukan di baris 4 sheet Santri \u2014 pastikan file ini format yang benar.')
-for(r=0,q=0,p=4;p<c7.length;++p){o=c7[p]
+bz4(c6,c7){var s,r,q,p,o,n,m,l,k,j,i,h,g,f,e,d,c,b,a,a0,a1,a2,a3,a4,a5,a6,a7,a8,a9,b0,b1,b2,b3,b4,b5,b6="nama santri",b7="tanggal lahir",b8='" tidak bisa dibaca \u2014 dikosongkan.',b9="tempat lahir",c0='): Tanggal Lahir "',c1=A.b([],t.s),c2=t.dk,c3=A.b([],c2),c4=t.S,c5=A.u(c4,t.A6)
+if(c6.length<=3)return new A.YD(B.a2S,B.a5h,0,0)
+s=A.bem(c6[3])
+if(!s.al(0,b6))c1.push('Header "Nama Santri" tidak ditemukan di baris 4 sheet Santri \u2014 pastikan file ini format yang benar.')
+for(r=0,q=0,p=4;p<c6.length;++p){o=c6[p]
 if(A.bdJ(o))continue;++q
 n=p+1
-m=A.eP(A.fE(o,s,b7))
+m=A.eP(A.fE(o,s,b6))
 if(m.length===0){++r
-c2.push("Baris "+n+": dilewati (tanpa nama santri).")
+c1.push("Baris "+n+": dilewati (tanpa nama santri).")
 continue}l=A.fE(o,s,"jenis kelamin")
 k=A.byZ(l)
-if(k.length===0&&A.eP(l).length!==0)c2.push("Baris "+n+" ("+m+'): Jenis Kelamin "'+A.eP(l)+'" tidak dikenali \u2014 dikosongkan.')
-j=A.fE(o,s,b8)
+if(k.length===0&&A.eP(l).length!==0)c1.push("Baris "+n+" ("+m+'): Jenis Kelamin "'+A.eP(l)+'" tidak dikenali \u2014 dikosongkan.')
+j=A.fE(o,s,b7)
 if(A.eP(j).length!==0){i=A.b5r(j)
-if(i==null)c2.push("Baris "+n+" ("+m+c1+A.eP(j)+b9)}else i=b6
+if(i==null)c1.push("Baris "+n+" ("+m+c0+A.eP(j)+b8)}else i=null
 h=A.fE(o,s,"tanggal masuk")
 if(A.eP(h).length!==0){g=A.b5r(h)
-if(g==null)c2.push("Baris "+n+" ("+m+'): Tanggal Masuk "'+A.eP(h)+'" tidak bisa dibaca (tanpa tahun lengkap) \u2014 dikosongkan.')}else g=b6
+if(g==null)c1.push("Baris "+n+" ("+m+'): Tanggal Masuk "'+A.eP(h)+'" tidak bisa dibaca (tanpa tahun lengkap) \u2014 dikosongkan.')}else g=null
 f=A.beR(A.fE(o,s,"anak ke"))
 e=A.beR(A.fE(o,s,"jumlah saudara"))
 d=A.eP(A.fE(o,s,"nik"))
-c=A.eP(A.fE(o,s,c0))
-b=A.eP(A.fE(o,s,"alamat ktp"))
-a=e==null?b6:e+1
-a0=new A.a5p(m,k,c,i,b,f,a,d,A.eP(A.fE(o,s,"no kk")),A.eP(A.fE(o,s,"nisn")),A.eP(A.fE(o,s,"nis")),g,A.eP(A.fE(o,s,"asal lembaga")),A.eP(A.fE(o,s,"catatan")))
-c6.l(0,p-4,a0)
-c4.push(a0.a7N())}a1=0
-if(c8.length>3){a2=A.bem(c8[3])
-a3=A.u(t.N,c5)
-for(c=new A.fd(c6,c6.$ti.i("fd<1,2>")).gP(0);c.q();){a4=c.d
-d=a4.b.w
-if(d.length!==0)a3.l(0,d,a4.a)}a5=A.u(c5,t.c8)
-for(p=4;p<c8.length;++p){o=c8[p]
+c=new A.a5p(m,k,A.eP(A.fE(o,s,b9)),i,A.eP(A.fE(o,s,"alamat ktp")),f,e,d,A.eP(A.fE(o,s,"no kk")),A.eP(A.fE(o,s,"nisn")),A.eP(A.fE(o,s,"nis")),g,A.eP(A.fE(o,s,"asal lembaga")),A.eP(A.fE(o,s,"catatan")))
+c5.l(0,p-4,c)
+c3.push(c.a7N())}b=0
+if(c7.length>3){a=A.bem(c7[3])
+a0=A.u(t.N,c4)
+for(a1=new A.fd(c5,c5.$ti.i("fd<1,2>")).gP(0);a1.q();){a2=a1.d
+d=a2.b.w
+if(d.length!==0)a0.l(0,d,a2.a)}a3=A.u(c4,t.c8)
+for(p=4;p<c7.length;++p){o=c7[p]
 if(A.bdJ(o))continue
 n=p+1
-a6=A.eP(A.fE(o,a2,"nama wali"))
-if(a6.length===0)continue
-a7=p-4
-a8=a3.h(0,A.eP(A.fE(o,a2,"nik santri")))
-if(a8==null){c5="Baris Wali "+n
-if(c6.al(0,a7))c2.push(c5+" ("+a6+"): NIK Santri tidak cocok dengan murid mana pun \u2014 ditautkan ke murid baris yang sama (periksa NIK-nya).")
-else{c2.push(c5+" ("+a6+"): tidak tertaut ke murid mana pun (NIK tidak cocok, baris santri tidak ada) \u2014 dilewati.")
-continue}a8=a7}a9=A.eP(A.fE(o,a2,"hubungan")).toLowerCase()
-if(a9!=="ayah"&&a9!=="ibu"&&a9!=="wali"){c2.push("Baris Wali "+n+" ("+a6+'): Hubungan "'+a9+'" tidak dikenali (ayah/ibu/wali) \u2014 dilewati.')
-continue}b0=a5.bO(0,a8,new A.b0f())
-if(b0.t(0,a9))c2.push("Baris Wali "+n+" ("+a6+"): murid sudah punya "+a9+" dari baris sebelumnya \u2014 baris ini menimpanya.")
-b0.B(0,a9)
-b1=A.fE(o,a2,b8)
-if(A.eP(b1).length!==0){b2=A.b5r(b1)
-if(b2==null)c2.push("Baris Wali "+n+" ("+a6+c1+A.eP(b1)+b9)}else b2=b6
-c5=c6.h(0,a8)
-c5.toString
-c=A.eP(A.fE(o,a2,c0))
-b=A.eP(A.fE(o,a2,"pendidikan"))
-a=A.eP(A.fE(o,a2,"pekerjaan"))
-c5.aNh(A.eP(A.fE(o,a2,"alamat")),A.eP(A.fE(o,a2,"no hp")),a9,a6,a,b,b2,c);++a1}}b3=A.b([],c3)
-c3=c6.$ti.i("bd<1>")
-b4=A.K(new A.bd(c6,c3),c3.i("k.E"))
+a4=A.eP(A.fE(o,a,"nama wali"))
+if(a4.length===0)continue
+a5=p-4
+a6=a0.h(0,A.eP(A.fE(o,a,"nik santri")))
+if(a6==null){c4="Baris Wali "+n
+if(c5.al(0,a5))c1.push(c4+" ("+a4+"): NIK Santri tidak cocok dengan murid mana pun \u2014 ditautkan ke murid baris yang sama (periksa NIK-nya).")
+else{c1.push(c4+" ("+a4+"): tidak tertaut ke murid mana pun (NIK tidak cocok, baris santri tidak ada) \u2014 dilewati.")
+continue}a6=a5}a7=A.eP(A.fE(o,a,"hubungan")).toLowerCase()
+if(a7!=="ayah"&&a7!=="ibu"&&a7!=="wali"){c1.push("Baris Wali "+n+" ("+a4+'): Hubungan "'+a7+'" tidak dikenali (ayah/ibu/wali) \u2014 dilewati.')
+continue}a8=a3.bO(0,a6,new A.b0f())
+if(a8.t(0,a7))c1.push("Baris Wali "+n+" ("+a4+"): murid sudah punya "+a7+" dari baris sebelumnya \u2014 baris ini menimpanya.")
+a8.B(0,a7)
+a9=A.fE(o,a,b7)
+if(A.eP(a9).length!==0){b0=A.b5r(a9)
+if(b0==null)c1.push("Baris Wali "+n+" ("+a4+c0+A.eP(a9)+b8)}else b0=null
+c4=c5.h(0,a6)
+c4.toString
+a1=A.eP(A.fE(o,a,b9))
+b1=A.eP(A.fE(o,a,"pendidikan"))
+b2=A.eP(A.fE(o,a,"pekerjaan"))
+c4.aNh(A.eP(A.fE(o,a,"alamat")),A.eP(A.fE(o,a,"no hp")),a7,a4,b2,b1,b0,a1);++b}}b3=A.b([],c2)
+c2=c5.$ti.i("bd<1>")
+b4=A.K(new A.bd(c5,c2),c2.i("k.E"))
 B.b.i8(b4)
-for(c3=b4.length,b5=0;b5<b4.length;b4.length===c3||(0,A.H)(b4),++b5)b3.push(c6.h(0,b4[b5]).a7N())
-return new A.YD(b3,c2,r,a1)},
+for(c2=b4.length,b5=0;b5<b4.length;b4.length===c2||(0,A.H)(b4),++b5)b3.push(c5.h(0,b4[b5]).a7N())
+return new A.YD(b3,c1,r,b)},
 YD:function YD(a,b,c,d){var _=this
 _.a=a
 _.b=b
@@ -135784,7 +135781,7 @@ B.Vg=new A.cp(B.UJ,14,B.q,null,null)
 B.a8Y=new A.am(B.hX,B.Vg,null)
 B.OF=new A.af(18,16,18,20)
 B.afd=new A.v(!0,B.ei,null,null,null,null,11,null,null,0.5,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null)
-B.akR=new A.ay("BABUL HUDA OFFICIAL \xb7 Versi 1.3.0",null,B.afd,B.a_,null,null,null,null,null,null)
+B.akR=new A.ay("BABUL HUDA OFFICIAL \xb7 Versi 1.3.1",null,B.afd,B.a_,null,null,null,null,null,null)
 B.a8Z=new A.am(B.OF,B.akR,null)
 B.aks=new A.ay("Belum ada pendaftar lain.",null,B.ll,null,null,null,null,null,null,null)
 B.LJ=new A.eZ(B.N,null,null,B.aks,null)
@@ -136756,7 +136753,7 @@ B.ali=new A.ay("Jumlah data belum bisa dimuat.\nPeriksa koneksi, lalu coba lagi.
 B.alj=new A.ay("\ud83d\udd12 Tampilan baca saja \u2014 biodata ini hanya bisa dilihat,\ntidak bisa diubah. Hanya pemiliknya yang bisa mengubah.",null,B.GC,B.a_,null,null,null,null,null,null)
 B.Mq=new A.N(1,0.4196078431372549,0.6039215686274509,0.5176470588235295,B.h)
 B.ahX=new A.v(!0,B.Mq,null,null,null,null,11,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null)
-B.alk=new A.ay("Versi 1.3.0",null,B.ahX,null,null,null,null,null,null,null)
+B.alk=new A.ay("Versi 1.3.1",null,B.ahX,null,null,null,null,null,null,null)
 B.all=new A.ay("Kamera",null,null,null,null,null,null,null,null,null)
 B.ahi=new A.v(!0,B.ei,null,null,null,null,11.5,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null)
 B.alm=new A.ay("Mondok = tinggal di dayah \xb7 Non Mondok = pulang tiap hari",null,B.ahi,null,null,null,null,null,null,null)
