@@ -2,6 +2,29 @@
 <html>
 <head>
   <!--
+    Content-Security-Policy lewat meta-tag (v1.7.0 — Rencana
+    Keamanan §10, pola perbaikan DEBT 18 Nov 2026): GitHub
+    Pages tidak bisa mengatur response header, jadi CSP hanya
+    bisa lewat meta-tag. Kebijakan ini lintasan pertama —
+    cukup longgar supaya Flutter web + Firebase + Google
+    Sign-In + Supabase Storage tetap jalan ('unsafe-inline'
+    untuk frame-buster di bawah, 'unsafe-eval' untuk
+    Flutter), tapi tetap membatasi: koneksi hanya ke host
+    Google/Firebase/Supabase (mencegah pencurian data ke host
+    asing), tanpa object/embed, iframe hanya untuk Google
+    Sign-In. VERIFIKASI di build live sebelum memperketat
+    (mis. hapus 'unsafe-inline' bila frame-buster dipindah ke
+    file .js sendiri). frame-ancestors TIDAK BISA lewat
+    meta-tag (diabaikan browser) — clickjacking dicegah
+    dengan frame-buster di bawah.
+  -->
+  <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self' 'unsafe-inline' 'unsafe-eval' https://apis.google.com https://accounts.google.com; connect-src 'self' https://*.googleapis.com https://*.firebaseapp.com https://*.firebaseio.com wss://*.googleapis.com wss://*.firebaseio.com https://accounts.google.com https://apis.google.com https://*.supabase.co wss://*.supabase.co; img-src 'self' data: https:; media-src 'self' data:; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com; font-src 'self' data: https://fonts.gstatic.com; frame-src https://accounts.google.com; worker-src 'self'; object-src 'none'; base-uri 'self'; form-action 'self'; upgrade-insecure-requests">
+  <script>
+    // Frame-busting: web BABUL HUDA tidak pernah di-frame di mana pun.
+    // Bila dibuka di dalam frame (clickjacking), keluar dari frame.
+    if (window.top !== window.self) { window.top.location = window.self.location; }
+  </script>
+  <!--
     If you are serving your web app in a path other than the root, change the
     href value below to reflect the base path you are serving from.
 
