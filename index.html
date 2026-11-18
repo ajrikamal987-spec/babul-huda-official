@@ -27,8 +27,20 @@
     memuat https://fonts.gstatic.com (font Roboto diunduh
     lewat fetch, yang diatur connect-src, bukan font-src).
     JANGAN hapus kedua host ini dari CSP.
+    HOTFIX v1.7.6 (18 Nov 2026, unggah foto gagal sejak v1.7.0):
+    image_picker web mengembalikan XFile berupa blob URL
+    (blob:https://...), BUKAN bytes di memori — readAsBytes()
+    mengambilnya lewat XHR yang diatur connect-src. Tanpa
+    blob: di connect-src, browser memblokir permintaan itu
+    ("Could not load Blob from its URL. Has it been revoked?")
+    sehingga foto guru/murid tidak bisa dipilih sama sekali
+    (foto wajib — pendaftaran guru baru tertutup total) dan
+    impor Excel (file_picker tanpa withData) ikut gagal
+    lewat jalur yang sama. blob: aman: hanya blob yang
+    dibuat skrip origin ini sendiri yang bisa diambil,
+    bukan host asing. JANGAN hapus blob: dari connect-src.
   -->
-  <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self' 'unsafe-inline' 'unsafe-eval' https://apis.google.com https://accounts.google.com https://www.gstatic.com; connect-src 'self' https://*.googleapis.com https://*.firebaseapp.com https://*.firebaseio.com wss://*.googleapis.com wss://*.firebaseio.com https://accounts.google.com https://apis.google.com https://*.supabase.co wss://*.supabase.co https://www.gstatic.com https://fonts.gstatic.com; img-src 'self' data: https:; media-src 'self' data:; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com; font-src 'self' data: https://fonts.gstatic.com; frame-src https://accounts.google.com; worker-src 'self'; object-src 'none'; base-uri 'self'; form-action 'self'; upgrade-insecure-requests">
+  <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self' 'unsafe-inline' 'unsafe-eval' https://apis.google.com https://accounts.google.com https://www.gstatic.com; connect-src 'self' blob: https://*.googleapis.com https://*.firebaseapp.com https://*.firebaseio.com wss://*.googleapis.com wss://*.firebaseio.com https://accounts.google.com https://apis.google.com https://*.supabase.co wss://*.supabase.co https://www.gstatic.com https://fonts.gstatic.com; img-src 'self' data: https:; media-src 'self' data:; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com; font-src 'self' data: https://fonts.gstatic.com; frame-src https://accounts.google.com; worker-src 'self'; object-src 'none'; base-uri 'self'; form-action 'self'; upgrade-insecure-requests">
   <script>
     // Frame-busting: web BABUL HUDA tidak pernah di-frame di mana pun.
     // Bila dibuka di dalam frame (clickjacking), keluar dari frame.
