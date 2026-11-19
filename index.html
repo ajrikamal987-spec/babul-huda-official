@@ -39,6 +39,10 @@
     lewat jalur yang sama. blob: aman: hanya blob yang
     dibuat skrip origin ini sendiri yang bisa diambil,
     bukan host asing. JANGAN hapus blob: dari connect-src.
+    CATATAN v1.7.12 (layar loading HTML, J12): pola bintang
+    layar loading memakai data-URI SVG di background-image
+    CSS — diatur img-src, yang SUDAH mengizinkan `data:`
+    sejak v1.7.0, jadi CSP tidak perlu diubah sama sekali.
   -->
   <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self' 'unsafe-inline' 'unsafe-eval' https://apis.google.com https://accounts.google.com https://www.gstatic.com; connect-src 'self' blob: https://*.googleapis.com https://*.firebaseapp.com https://*.firebaseio.com wss://*.googleapis.com wss://*.firebaseio.com https://accounts.google.com https://apis.google.com https://*.supabase.co wss://*.supabase.co https://www.gstatic.com https://fonts.gstatic.com; img-src 'self' data: https:; media-src 'self' data:; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com; font-src 'self' data: https://fonts.gstatic.com; frame-src https://accounts.google.com; worker-src 'self'; object-src 'none'; base-uri 'self'; form-action 'self'; upgrade-insecure-requests">
   <script>
@@ -76,8 +80,124 @@
 
   <title>BABUL HUDA OFFICIAL</title>
   <link rel="manifest" href="manifest.json">
+
+  <!--
+    Layar loading HTML/CSS (v1.7.12 — J12, Pelajaran 22 YUM):
+    tampil INSTAN sebelum engine Flutter dimuat, menutup layar
+    PUTIH ~2 detik saat buka dingin (animasi splash C adalah
+    widget Flutter — tidak pernah bisa menjadi hal pertama yang
+    tampil). Desain sama persis dengan splash C (mockup
+    desain/splash-c-lingkaran-cahaya.html): gradien hijau tua +
+    pola bintang + lingkaran emas ganda + siluet Masjid
+    Al-Farizi + tiga titik emas memantul (animasi loading C).
+    Dihapus skrip di bawah saat event flutter-first-frame
+    (memudar 0,3 dtk, lalu DIHAPUS dari DOM) atau paling
+    lambat 15 detik. Tanpa dependensi jaringan apa pun
+    (tanpa font/aset eksternal) supaya tampil seketika
+    bahkan di jaringan lambat.
+  -->
+  <style>
+    html, body { margin: 0; padding: 0; }
+    body { background-color: #0B3D2E; }
+    #loading {
+      position: fixed; inset: 0; z-index: 9999;
+      display: flex; flex-direction: column; align-items: center; justify-content: center;
+      background-color: #0B3D2E;
+      /* E2: gradien ADALAH background-image — pola bintang + gradien
+         digabung dalam SATU deklarasi (pola dulu, gradien kedua).
+         Jangan pernah mendeklarasikan background-image setelah
+         background (itu menghapus gradien). */
+      background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='48' height='48'%3E%3Cpath d='M24 4 L28 20 L44 24 L28 28 L24 44 L20 28 L4 24 L20 20 Z' fill='%23C9A227' fill-opacity='0.10'/%3E%3C/svg%3E"), linear-gradient(135deg, #0B3D2E 0%, #0F4A38 55%, #14604A 100%);
+      transition: opacity 0.3s ease;
+    }
+    #loading.hilang { opacity: 0; pointer-events: none; }
+    #loading .halo {
+      position: relative; width: min(280px, 70vw); height: min(280px, 70vw);
+      display: flex; align-items: center; justify-content: center;
+    }
+    #loading .halo::before {
+      content: ''; position: absolute; inset: 0;
+      border: 1.5px solid rgba(201, 162, 39, .65); border-radius: 50%;
+    }
+    #loading .halo::after {
+      content: ''; position: absolute; inset: 12px;
+      border: 1px solid rgba(201, 162, 39, .3); border-radius: 50%;
+    }
+    #loading .masjid { width: min(220px, 56vw); position: relative; z-index: 1; }
+    #loading .judul {
+      font-family: Georgia, 'Times New Roman', serif;
+      font-size: 27px; font-weight: 700; color: #F5EFD8;
+      letter-spacing: 2px; margin-top: 26px;
+    }
+    #loading .garis { width: 64px; height: 1.5px; background: #C9A227; margin: 12px 0; }
+    #loading .off { font-size: 11px; letter-spacing: 7px; color: #E9D98C; font-weight: 700; font-family: Arial, sans-serif; }
+    #loading .muat { position: absolute; bottom: 64px; left: 0; right: 0; text-align: center; }
+    #loading .titik { display: flex; gap: 8px; justify-content: center; }
+    #loading .titik i {
+      width: 11px; height: 11px; border-radius: 50%;
+      background: #C9A227; display: block;
+      animation: lompat-titik 1.2s ease-in-out infinite;
+    }
+    #loading .titik i:nth-child(2) { animation-delay: 0.15s; }
+    #loading .titik i:nth-child(3) { animation-delay: 0.3s; }
+    #loading .lb { font-size: 11px; color: #E9D98C; margin-top: 10px; letter-spacing: 1px; font-family: Arial, sans-serif; }
+    @keyframes lompat-titik {
+      0%, 100% { transform: translateY(0); }
+      50% { transform: translateY(-6px); }
+    }
+  </style>
 </head>
 <body>
+  <!-- Layar loading (v1.7.12 — J12): dihapus skrip di bawah saat
+       Flutter menampilkan frame pertama, atau paling lambat 15 detik. -->
+  <div id="loading" aria-hidden="true">
+    <div class="halo">
+      <svg class="masjid" viewBox="0 0 240 160" xmlns="http://www.w3.org/2000/svg">
+        <g fill="#C9A227">
+          <circle cx="120" cy="10" r="5"/><rect x="119" y="13" width="2" height="6"/>
+          <path d="M86 80 C86 58 96 48 108 34 C112 29 117 23 120 18 C123 23 128 29 132 34 C144 48 154 58 154 80 Z"/>
+          <rect x="84" y="80" width="72" height="7"/>
+          <path d="M16 122 L78 87 L162 87 L224 122 Z"/>
+          <rect x="14" y="122" width="212" height="4"/>
+          <rect x="30" y="126" width="180" height="30"/>
+          <rect x="26" y="156" width="188" height="4"/>
+        </g>
+        <g fill="#0F4A38">
+          <circle cx="122.5" cy="8.5" r="4.5"/>
+          <path d="M108 156 L108 142 L120 128 L132 142 L132 156 Z"/>
+          <path d="M76 156 L76 142 L84 134 L92 142 L92 156 Z"/>
+          <path d="M44 156 L44 142 L52 134 L60 142 L60 156 Z"/>
+          <path d="M148 156 L148 142 L156 134 L164 142 L164 156 Z"/>
+          <path d="M180 156 L180 142 L188 134 L196 142 L196 156 Z"/>
+        </g>
+      </svg>
+    </div>
+    <div class="judul">BABUL HUDA</div>
+    <div class="garis"></div>
+    <div class="off">OFFICIAL</div>
+    <div class="muat"><div class="titik"><i></i><i></i><i></i></div><div class="lb">Memuat…</div></div>
+  </div>
+  <script>
+    // Menghapus layar loading (v1.7.12 — J12): Flutter web menembakkan
+    // event 'flutter-first-frame' di window saat frame pertama tampil;
+    // layar HTML memudar 0,3 detik lalu DIHAPUS dari DOM (bukan hanya
+    // disembunyikan — supaya tidak menghalangi sentuhan sesudahnya).
+    // Pengaman 15 detik menghapusnya apa pun yang terjadi (bila
+    // Flutter gagal tampil, pengguna tidak terjebak selamanya).
+    (function () {
+      var sudah = false;
+      function hapusLayarMuat() {
+        if (sudah) return;
+        sudah = true;
+        var el = document.getElementById('loading');
+        if (!el) return;
+        el.classList.add('hilang');
+        setTimeout(function () { el.remove(); }, 350);
+      }
+      window.addEventListener('flutter-first-frame', hapusLayarMuat);
+      setTimeout(hapusLayarMuat, 15000);
+    })();
+  </script>
   <!--
     You can customize the "flutter_bootstrap.js" script.
     This is useful to provide a custom configuration to the Flutter loader
