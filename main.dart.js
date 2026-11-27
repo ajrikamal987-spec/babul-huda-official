@@ -43401,11 +43401,12 @@ break
 case 7:case 1:return A.p(q,r)
 case 2:return A.o(o.at(-1),r)}})
 return A.q($async$a2A,r)},
-bDx(){var s="babulhuda_oauth_state",r="babulhuda_oauth_nonce",q=A.bDf(),p=A.bDf()
-A.Kf(s,q)
+bDx(){var s,r="babulhuda_oauth_state",q="babulhuda_oauth_nonce",p=A.bDf(),o=A.bDf()
 A.Kf(r,p)
-if(A.D7(s)!==q||A.D7(r)!==p)throw A.c(A.as("localStorage tidak bisa ditulis"))
-v.G.window.location.href=A.bTM("https","accounts.google.com","/o/oauth2/v2/auth",A.X(["client_id",u.p,"redirect_uri","https://ajrikamal987-spec.github.io/babul-huda-official/","response_type","id_token","scope","openid email profile","nonce",A.bjl(B.mP.bt(B.bT.bt(p)).a),"state",q,"prompt","select_account"],t.N,t.z)).go_()},
+A.Kf(q,o)
+if(A.D7(r)!==p||A.D7(q)!==o)throw A.c(A.as("localStorage tidak bisa ditulis"))
+s=v.G
+s.window.location.href=A.bTM("https","accounts.google.com","/o/oauth2/v2/auth",A.X(["client_id",u.p,"redirect_uri",s.document.baseURI,"response_type","id_token","scope","openid email profile","nonce",A.bjl(B.mP.bt(B.bT.bt(o)).a),"state",p,"prompt","select_account"],t.N,t.z)).go_()},
 bZi(){var s,r,q,p,o="babulhuda_oauth_state",n="babulhuda_oauth_nonce",m=v.G,l=m.window.location.hash
 if(l.length===0)return null
 s=A.bEc(l)
@@ -66566,7 +66567,7 @@ $0(){this.a.f=A.D8(this.b.b,!1,B.mp)},
 $S:0}
 A.aXr.prototype={
 $1(a){var s=null,r=new A.cK(B.aX,$.aH()),q=A.f8(s,B.b9,!0,s,!0,B.a1,s,A.fv(),r,s,s,s,s,s,2,B.ae9,B.ao,!0,s,!0,s,!1,s,B.bi,s,s,s,s,s,s,s,s,s,1,s,s,!1,"\u2022",s,s,s,s,s,!1,s,s,!1,s,!0,s,B.br,s,s,s,s,s,s,s,s,s,s,s,s,!0,B.aM,s,B.h2,s,s,s,s)
-return A.hN(A.b([A.ed(B.ch,s,s,new A.aXp(a),s,s),A.dN(B.W2,new A.aXq(a,r),A.d3(B.L,s,s,B.ab,s,s,s))],t.p),B.Y,q,s,B.bqj)},
+return A.hN(A.b([A.ed(B.ch,s,s,new A.aXp(a),s,s),A.dN(B.W2,new A.aXq(a,r),A.d3(B.L,s,s,B.ab,s,s,s))],t.p),B.Y,q,s,B.bqk)},
 $S:20}
 A.aXp.prototype={
 $0(){return A.ad(this.a,!1).bc()},
@@ -66587,7 +66588,7 @@ $0(){return this.a.e.K(0,this.b)},
 $S:0}
 A.aXh.prototype={
 $1(a){var s=null,r=A.H(this.b.c+" akan dihapus dari kabilah "+this.a.a.d+".",s,s,s,s,s,s,s,s)
-return A.hN(A.b([A.ed(B.ch,s,s,new A.aXf(a),s,s),A.dN(B.h6,new A.aXg(a),A.d3(B.aD,s,s,B.W,s,s,s))],t.p),B.Y,r,s,B.bqi)},
+return A.hN(A.b([A.ed(B.ch,s,s,new A.aXf(a),s,s),A.dN(B.h6,new A.aXg(a),A.d3(B.aD,s,s,B.W,s,s,s))],t.p),B.Y,r,s,B.bqj)},
 $S:20}
 A.aXf.prototype={
 $0(){return A.ad(this.a,!1).c7(!1)},
@@ -67454,7 +67455,7 @@ $0(){return this.a.aLt(this.b.a)},
 $S:0}
 A.a3y.prototype={
 B(a){var s=null,r=t.p
-return A.cz(s,s,A.eG(B.bI,A.b([A.ac(s,s,B.y,B.aC,s,s,s,s,s,s,s,s,s),A.Gp(0,A.fg(A.ac(s,s,B.y,s,s,s,s,s,s,s,s,s,s),s,s,new A.Jh(48,0.07,s),B.aw)),A.kr(!0,A.di(A.a4(A.b([B.afk,B.fA,A.H("Mohon Bersabarlah",s,s,s,s,A.fY(B.Q,27,B.U,s),s,s,s),B.aP,B.bp7,B.UO,A.ac(s,B.br0,B.y,s,s,new A.ah(B.Y,s,A.bq(B.L,B.M,1.5),A.aj(14),s,s,B.P),s,s,s,B.c2,s,s,s),B.m4,B.JC,B.eC,A.co(A.dN(B.brb,this.c,A.d3(B.L,s,s,B.ab,B.fn,new A.cD(A.aj(12),B.X),s)),s,200),B.UP,B.bpI],r),B.C,B.u,B.w),s,B.BV,s,B.an),B.b2,!0)],r),B.a1,B.bB,s),s,s,s)}}
+return A.cz(s,s,A.eG(B.bI,A.b([A.ac(s,s,B.y,B.aC,s,s,s,s,s,s,s,s,s),A.Gp(0,A.fg(A.ac(s,s,B.y,s,s,s,s,s,s,s,s,s,s),s,s,new A.Jh(48,0.07,s),B.aw)),A.kr(!0,A.di(A.a4(A.b([B.afk,B.fA,A.H("Mohon Bersabarlah",s,s,s,s,A.fY(B.Q,27,B.U,s),s,s,s),B.aP,B.bp8,B.UO,A.ac(s,B.br0,B.y,s,s,new A.ah(B.Y,s,A.bq(B.L,B.M,1.5),A.aj(14),s,s,B.P),s,s,s,B.c2,s,s,s),B.m4,B.JC,B.eC,A.co(A.dN(B.brb,this.c,A.d3(B.L,s,s,B.ab,B.fn,new A.cD(A.aj(12),B.X),s)),s,200),B.UP,B.bpJ],r),B.C,B.u,B.w),s,B.BV,s,B.an),B.b2,!0)],r),B.a1,B.bB,s),s,s,s)}}
 A.Nn.prototype={
 a3(){var s=t.N
 return new A.Vs(A.aU(s),A.b([],t.s),A.aU(s))}}
@@ -68116,7 +68117,7 @@ $0(){return this.a.cy=!0},
 $S:0}
 A.b3u.prototype={
 $1(a){var s=null
-return A.hN(A.b([A.ed(B.ch,s,s,new A.b3r(a),s,s),A.dN(B.bqR,new A.b3s(a),A.d3(B.aD,s,s,s,s,s,s))],t.p),s,B.bq5,s,B.boS)},
+return A.hN(A.b([A.ed(B.ch,s,s,new A.b3r(a),s,s),A.dN(B.bqR,new A.b3s(a),A.d3(B.aD,s,s,s,s,s,s))],t.p),s,B.bq6,s,B.boT)},
 $S:20}
 A.b3r.prototype={
 $0(){return A.ad(this.a,!1).c7(!1)},
@@ -68176,7 +68177,7 @@ $1(a){return B.ae5},
 $S:513}
 A.b3d.prototype={
 $1(a){var s=null
-return A.hN(A.b([A.ed(B.ch,s,s,new A.b3b(a),s,s),A.dN(B.bpA,new A.b3c(a),A.d3(B.Q,s,s,s,s,s,s))],t.p),s,B.bpl,s,B.boQ)},
+return A.hN(A.b([A.ed(B.ch,s,s,new A.b3b(a),s,s),A.dN(B.bpB,new A.b3c(a),A.d3(B.Q,s,s,s,s,s,s))],t.p),s,B.bpm,s,B.boR)},
 $S:20}
 A.b3b.prototype={
 $0(){return A.ad(this.a,!1).c7(!1)},
@@ -68229,7 +68230,7 @@ $S:0}
 A.b3n.prototype={
 $1(a){var s=null,r=this.b,q=A.bwY(r.z),p=A.ac(s,s,B.y,s,s,new A.ah(B.dR,s,s,A.aj(2),s,s,B.P),s,4,s,s,s,s,40),o=t.jf
 r=A.G(new A.ab(B.Ir,new A.b3m(this.a,q,r),o),o.i("af.E"))
-return new A.N(B.nB,A.a4(A.b([p,B.aU,B.brW,B.m5,B.boT,B.bR,A.boz(1.25,r,3,10,10,B.x7,!0)],t.p),B.C,B.u,B.az),s)},
+return new A.N(B.nB,A.a4(A.b([p,B.aU,B.brW,B.m5,B.boU,B.bR,A.boz(1.25,r,3,10,10,B.x7,!0)],t.p),B.C,B.u,B.az),s)},
 $S:521}
 A.b3m.prototype={
 $1(a){return new A.CJ(a,a===this.b,new A.b3l(this.a,this.c,a),null)},
@@ -68370,7 +68371,7 @@ A.acj.prototype={
 B(a){var s,r=null,q=this.c,p=q.length,o=p===1?B.j.gR(q)+" baru saja mendaftar.":""+p+" guru baru saja mendaftar."
 p=A.aj(12)
 s=t.p
-return new A.N(B.eS,A.ac(r,A.aV(A.b([A.jk(r,A.hq(B.j.gR(q)),1.5,"",!0,32,r,r),B.bA,A.aQ(A.a4(A.b([B.bpg,B.qQ,A.H(o,1,B.ba,r,r,B.r0,r,r,r)],s),B.a0,B.u,B.w),1),A.ed(B.boE,r,r,this.e,r,A.x8(r,r,r,r,r,r,r,r,r,r,r,B.ep,r,r,r,r,B.fP,r,r,r,r,r,B.q9,r,r)),A.h2(B.aS,B.YD,B.acQ,r,r,this.d,B.b2,r,"Tutup")],s),B.C,B.u,B.w,0),B.y,r,r,new A.ah(B.Y,r,B.Yt,p,r,r,B.P),r,r,r,B.BJ,r,r,r),r)}}
+return new A.N(B.eS,A.ac(r,A.aV(A.b([A.jk(r,A.hq(B.j.gR(q)),1.5,"",!0,32,r,r),B.bA,A.aQ(A.a4(A.b([B.bph,B.qQ,A.H(o,1,B.ba,r,r,B.r0,r,r,r)],s),B.a0,B.u,B.w),1),A.ed(B.boE,r,r,this.e,r,A.x8(r,r,r,r,r,r,r,r,r,r,r,B.ep,r,r,r,r,B.fP,r,r,r,r,r,B.q9,r,r)),A.h2(B.aS,B.YD,B.acQ,r,r,this.d,B.b2,r,"Tutup")],s),B.C,B.u,B.w,0),B.y,r,r,new A.ah(B.Y,r,B.Yt,p,r,r,B.P),r,r,r,B.BJ,r,r,r),r)}}
 A.uI.prototype={
 B(a){var s=this,r=null,q=s.f,p=A.aj(16),o=A.bq(B.L,B.M,1.5),n=A.aj(16),m=A.b([new A.cv(0,B.aW,B.Q.dr(0.12),B.xa,14)],t.c),l=A.bq(B.L,B.M,2),k=t.p
 l=A.b([A.ac(r,A.iS(s.c,B.Y,r,32),B.y,r,r,new A.ah(B.Q,r,l,r,r,r,B.bK),r,56,r,r,r,r,56),B.aP,A.H(s.d,r,r,r,r,A.fY(B.Q,15,B.U,1),r,r,r),B.aP,new A.N(B.nx,A.H(s.e,r,r,r,r,B.bkk,B.a4,r,r),r)],k)
@@ -68483,7 +68484,7 @@ case 6:case 1:return A.p(q,r)
 case 2:return A.o(o.at(-1),r)}})
 return A.q($async$Hh,r)},
 aLM(){this.E(new A.b4p(this))},
-B(a){var s,r,q,p,o=this,n=null,m=A.k8(n,!0,n,n,n,n,B.bpX,n,n)
+B(a){var s,r,q,p,o=this,n=null,m=A.k8(n,!0,n,n,n,n,B.bpY,n,n)
 if(o.e)s=B.mQ
 else if(!o.f)s=B.a08
 else{switch(o.d.a){case 0:s=t.p
@@ -68514,9 +68515,9 @@ o=k.at
 n=o.length
 m=k.z
 l=t.p
-q=A.b([new A.IP(g,""+e+" murid akan diimpor \xb7 "+h.d+" orang tua/wali tertaut"+d+".",j),B.b6,B.brT,B.aP,r,B.b6,B.bqf,B.aP,A.f8(j,B.b9,!1,j,!0,B.a1,j,A.fv(),s,j,j,j,j,j,2,A.ni(j,B.lJ,j,j,j,j,j,j,!0,j,j,j,j,j,j,j,j,j,j,j,j,j,j,j,j,j,n===0?"Belum ada lokal di kelas "+m+" \u2014 lokal baru akan dibuat.":"Lokal kelas "+m+" yang sudah ada: "+B.j.bd(o,", ")+".",j,j,j,j,"A",j,j,j,j,j,j,j,j,j,!0,!0,!1,j,j,j,j,j,j,j,j,j,j,j,j,j,j),B.ao,!0,j,!0,j,!1,j,B.bi,j,j,p,B.btZ,j,j,j,1,j,1,j,j,!1,"\u2022",j,j,j,j,j,!1,j,j,!1,j,!0,j,B.br,j,j,j,j,j,j,j,j,j,j,j,j,!0,B.aM,j,B.Vk,j,j,j,j),B.b6,B.bpG,B.aP,A.bvm(B.aeq,k.Q,B.aZF,B.btY,new A.b46(k),q),B.b6],l)
+q=A.b([new A.IP(g,""+e+" murid akan diimpor \xb7 "+h.d+" orang tua/wali tertaut"+d+".",j),B.b6,B.brT,B.aP,r,B.b6,B.bqg,B.aP,A.f8(j,B.b9,!1,j,!0,B.a1,j,A.fv(),s,j,j,j,j,j,2,A.ni(j,B.lJ,j,j,j,j,j,j,!0,j,j,j,j,j,j,j,j,j,j,j,j,j,j,j,j,j,n===0?"Belum ada lokal di kelas "+m+" \u2014 lokal baru akan dibuat.":"Lokal kelas "+m+" yang sudah ada: "+B.j.bd(o,", ")+".",j,j,j,j,"A",j,j,j,j,j,j,j,j,j,!0,!0,!1,j,j,j,j,j,j,j,j,j,j,j,j,j,j),B.ao,!0,j,!0,j,!1,j,B.bi,j,j,p,B.btZ,j,j,j,1,j,1,j,j,!1,"\u2022",j,j,j,j,j,!1,j,j,!1,j,!0,j,B.br,j,j,j,j,j,j,j,j,j,j,j,j,!0,B.aM,j,B.Vk,j,j,j,j),B.b6,B.bpH,B.aP,A.bvm(B.aeq,k.Q,B.aZF,B.btY,new A.b46(k),q),B.b6],l)
 g=h.b
-if(g.length!==0)B.j.L(q,A.b([B.bpL,B.aP,new A.VK(g,j),B.b6],l))
+if(g.length!==0)B.j.L(q,A.b([B.bpM,B.aP,new A.VK(g,j),B.b6],l))
 g=k.w
 if(g!=null)B.j.L(q,A.b([new A.VI(g,j),B.b6],l))
 g=k.r
@@ -68532,7 +68533,7 @@ s=o.b
 if(s.length!==0)B.j.L(n,A.b([B.bro,B.aP,new A.VK(s,q),B.b6],m))
 n.push(A.eJ(B.vy,B.bqX,new A.b47(r),q))
 n.push(B.aP)
-n.push(A.SA(B.D_,B.bpn,r.ga8w(),q))
+n.push(A.SA(B.D_,B.bpo,r.ga8w(),q))
 return A.a4(n,B.bM,B.u,B.w)}}
 A.b4h.prototype={
 $0(){var s=this.a
@@ -68725,7 +68726,7 @@ o=o?r:q
 return A.cz(s,B.aC,A.a4(A.b([new A.dC("Kabilah "+n,"MUDAKKIR \xb7 "+o,!1,new A.aBp(a),s,s),A.aQ(new A.cg(new A.aBq(this),s,A.bQj(p),s,t.kv),1)],t.p),B.C,B.u,B.w),s,s,s)}}
 A.aBk.prototype={
 $1(a){var s=null,r=new A.cK(B.aX,$.aH()),q=A.f8(s,B.b9,!0,s,!0,B.a1,s,A.fv(),r,s,s,s,s,s,2,B.aek,B.ao,!0,s,!0,s,!1,s,B.bi,s,s,s,s,s,s,s,s,s,1,s,s,!1,"\u2022",s,s,s,s,s,!1,s,s,!1,s,!0,s,B.br,s,s,s,s,s,s,s,s,s,s,s,s,!0,B.aM,s,B.Vk,s,s,s,s)
-return A.hN(A.b([A.ed(B.ch,s,s,new A.aBi(a),s,s),A.dN(B.W2,new A.aBj(a,r),A.d3(B.L,s,s,B.ab,s,s,s))],t.p),B.Y,q,s,B.bq0)},
+return A.hN(A.b([A.ed(B.ch,s,s,new A.aBi(a),s,s),A.dN(B.W2,new A.aBj(a,r),A.d3(B.L,s,s,B.ab,s,s,s))],t.p),B.Y,q,s,B.bq1)},
 $S:20}
 A.aBi.prototype={
 $0(){return A.ad(this.a,!1).bc()},
@@ -68735,7 +68736,7 @@ $0(){return A.ad(this.a,!1).c7(B.o.aG(this.b.a.a))},
 $S:0}
 A.aBh.prototype={
 $1(a){var s=null,r=A.H("Kabilah "+this.a.c+" dan semua anggotanya akan dihapus. Tindakan ini tidak bisa dibatalkan.",s,s,s,s,s,s,s,s)
-return A.hN(A.b([A.ed(B.ch,s,s,new A.aBf(a),s,s),A.dN(B.h6,new A.aBg(a),A.d3(B.aD,s,s,B.W,s,s,s))],t.p),B.Y,r,s,B.bpW)},
+return A.hN(A.b([A.ed(B.ch,s,s,new A.aBf(a),s,s),A.dN(B.h6,new A.aBg(a),A.d3(B.aD,s,s,B.W,s,s,s))],t.p),B.Y,r,s,B.bpX)},
 $S:20}
 A.aBf.prototype={
 $0(){return A.ad(this.a,!1).c7(!1)},
@@ -68866,7 +68867,7 @@ r=A.b([A.H(r,n,n,n,n,B.yp,n,n,n)],p)
 if(i)B.j.L(r,A.b([B.cd,A.H("Pulang tanpa izin \xb7 "+s,n,n,n,n,B.bjJ,n,n,n)],p))
 r=A.aQ(A.a4(r,B.a0,B.u,B.w),1)
 o=this.a
-return new A.N(B.fm,A.ac(n,A.aV(A.b([q,B.cg,r,B.dq,i?A.Pi(B.bqP,new A.aBr(o,a,m,l),A.ju(n,n,n,n,n,n,n,n,n,B.aD,n,n,n,n,n,B.zz,n,n,n,n)):A.dN(B.bp2,new A.aBs(o,a,m,l),A.d3(B.L,n,n,B.ab,n,n,n))],p),B.C,B.u,B.w,0),B.y,n,n,new A.ah(B.Y,n,k,j,n,n,B.P),n,n,n,B.dn,n,n,n),n)},
+return new A.N(B.fm,A.ac(n,A.aV(A.b([q,B.cg,r,B.dq,i?A.Pi(B.bqP,new A.aBr(o,a,m,l),A.ju(n,n,n,n,n,n,n,n,n,B.aD,n,n,n,n,n,B.zz,n,n,n,n)):A.dN(B.bp3,new A.aBs(o,a,m,l),A.d3(B.L,n,n,B.ab,n,n,n))],p),B.C,B.u,B.w,0),B.y,n,n,new A.ah(B.Y,n,k,j,n,n,B.P),n,n,n,B.dn,n,n,n),n)},
 $S:170}
 A.aBr.prototype={
 $0(){var s=this
@@ -68983,7 +68984,7 @@ B(a){var s=null
 return A.cz(s,B.aC,A.a4(A.b([new A.dC("Kelola Admin","ADMIN \xb7 DUA TINGKAT",!0,new A.aBR(a),s,s),A.aQ(new A.cg(new A.aBS(this),s,A.bza(),s,t.a1),1)],t.p),B.C,B.u,B.w),s,s,s)}}
 A.aBL.prototype={
 $1(a){var s=null,r=A.H(this.a.b+" akan kembali menjadi guru biasa. Biodatanya tidak dihapus.",s,s,s,s,s,s,s,s)
-return A.hN(A.b([A.ed(B.ch,s,s,new A.aBJ(a),s,s),A.dN(B.bpP,new A.aBK(a),A.d3(B.aD,s,s,B.W,s,s,s))],t.p),B.Y,r,s,B.brQ)},
+return A.hN(A.b([A.ed(B.ch,s,s,new A.aBJ(a),s,s),A.dN(B.bpQ,new A.aBK(a),A.d3(B.aD,s,s,B.W,s,s,s))],t.p),B.Y,r,s,B.brQ)},
 $S:20}
 A.aBJ.prototype={
 $0(){return A.ad(this.a,!1).c7(!1)},
@@ -69002,7 +69003,7 @@ s=b.b
 if(s==null)s=B.b1J
 r=this.a
 q=t.p
-p=A.b([B.bqQ,B.bR,A.bSn(B.boM,h,r.e?"Kamu":"Admin Utama",h,h,h,"ADMIN UTAMA",!0,"Semua akses",B.L),B.aP],q)
+p=A.b([B.bqQ,B.bR,A.bSn(B.boN,h,r.e?"Kamu":"Admin Utama",h,h,h,"ADMIN UTAMA",!0,"Semua akses",B.L),B.aP],q)
 for(o=J.ax(s);o.q();){n=o.gG(o)
 m=n.a
 l=n.b
@@ -69011,7 +69012,7 @@ j=n.f
 i=n.d.length
 j=j==null?""+i+" dari 29 izin":""+i+" dari 29 izin \xb7 Sejak "+A.iM(j)
 B.j.L(p,A.b([new A.U1(h,B.Q,"teachers/"+m+"/photo.jpg",k,l,j,"MENENGAH",!1,new A.aBO(r,a,n,s),new A.aBP(r,a,n),h),B.aP],q))}p.push(B.eD)
-p.push(A.eJ(B.vz,B.bpf,new A.aBQ(r,a,s),A.d3(B.L,h,h,B.ab,B.fn,h,h)))
+p.push(A.eJ(B.vz,B.bpg,new A.aBQ(r,a,s),A.d3(B.L,h,h,B.ab,B.fn,h,h)))
 return A.oL(p,B.c2,h,!1)},
 $S:578}
 A.aBO.prototype={
@@ -69447,19 +69448,19 @@ if(g.CW){m=t.N
 n.push(new A.N(B.dT,A.aOy(!1,new A.b5U(g),B.b34,A.dm([g.e],m),!0,A.bpJ(B.cG,B.Q,B.bV),m),f))}m=A.aj(14)
 l=A.h2(f,f,B.acP,f,f,new A.b5V(g),f,f,"Hari sebelumnya")
 k=A.aQ(A.hg(f,A.H(A.Dc(g.d),f,f,f,f,B.blX,B.a4,f,f),B.ao,!1,f,f,f,f,f,f,f,f,f,f,f,f,f,f,g.gaD_(),f,f,f,f,f,f),1)
-n.push(A.ac(f,A.a4(A.b([A.aV(A.b([l,k,A.h2(f,f,B.ea,f,f,q?f:new A.b5W(g),f,f,"Hari berikutnya")],o),B.C,B.u,B.w,0),B.bpi],o),B.C,B.u,B.w),B.y,f,f,new A.ah(B.Q,f,f,m,f,f,B.P),f,f,B.dT,B.a5m,f,f,f))
+n.push(A.ac(f,A.a4(A.b([A.aV(A.b([l,k,A.h2(f,f,B.ea,f,f,q?f:new A.b5W(g),f,f,"Hari berikutnya")],o),B.C,B.u,B.w,0),B.bpj],o),B.C,B.u,B.w),B.y,f,f,new A.ah(B.Q,f,f,m,f,f,B.P),f,f,B.dT,B.a5m,f,f,f))
 if(g.grh()){m=A.bq(B.L,B.M,1)
 l=A.aj(12)
 n.push(new A.N(B.eS,A.ac(f,A.aV(A.b([B.ad6,B.bA,A.aQ(A.H(!g.fr?"Anda hanya bisa melihat absensi. Mengisi absensi memerlukan izin UBAH dari admin.":"Absensi tanggal ini terkunci. Hanya admin khusus yang bisa mengubahnya. Hubungi admin bila ada yang perlu diperbaiki.",f,f,f,f,B.r2,f,f,f),1)],o),B.C,B.u,B.w,0),B.y,f,f,new A.ah(B.Y,f,m,l,f,f,B.P),f,f,f,B.dn,f,f,1/0),f))}if(!g.grh())n.push(new A.a6q(g.dx,new A.b5X(g),f))
-if(g.fx&&!g.grh())n.push(new A.N(B.eS,A.a4(A.b([B.bqE,B.eD,A.f8(f,B.b9,!1,f,!0,B.a1,f,A.fv(),g.fy,f,f,f,f,f,2,B.aef,B.ao,!0,f,!0,f,!1,f,B.bi,f,f,f,f,f,f,f,f,f,1,f,f,!1,"\u2022",f,new A.b5Y(g),f,f,f,!1,f,f,!1,f,!0,f,B.br,f,f,f,f,f,f,f,f,f,f,f,f,!0,B.aM,f,B.dH,f,f,f,f),B.eD,B.bq9],o),B.a0,B.u,B.w),f))
+if(g.fx&&!g.grh())n.push(new A.N(B.eS,A.a4(A.b([B.bqE,B.eD,A.f8(f,B.b9,!1,f,!0,B.a1,f,A.fv(),g.fy,f,f,f,f,f,2,B.aef,B.ao,!0,f,!0,f,!1,f,B.bi,f,f,f,f,f,f,f,f,f,1,f,f,!1,"\u2022",f,new A.b5Y(g),f,f,f,!1,f,f,!1,f,!0,f,B.br,f,f,f,f,f,f,f,f,f,f,f,f,!0,B.aM,f,B.dH,f,f,f,f),B.eD,B.bqa],o),B.a0,B.u,B.w),f))
 m=g.grh()?f:g.gaGv()
 l=A.aj(12)
 k=A.bq(B.dQ,B.M,1)
 j=A.aj(12)
 i=g.dy
-i=A.b([B.ad9,B.cg,A.aQ(A.a4(A.b([A.H(i==null?"Saya menggantikan guru lain":"Menggantikan "+A.bI(i.b),f,f,f,f,B.dt,f,f,f),B.qQ,B.bp6],o),B.a0,B.u,B.w),1)],o)
+i=A.b([B.ad9,B.cg,A.aQ(A.a4(A.b([A.H(i==null?"Saya menggantikan guru lain":"Menggantikan "+A.bI(i.b),f,f,f,f,B.dt,f,f,f),B.qQ,B.bp7],o),B.a0,B.u,B.w),1)],o)
 if(g.dy!=null)i.push(A.h2(f,f,B.D0,f,f,new A.b5Z(g),f,f,"Batal menggantikan"))
-else i.push(B.bpH)
+else i.push(B.bpI)
 n.push(new A.N(B.BO,A.dQ(!1,l,!0,A.ac(f,A.aV(i,B.C,B.u,B.w,0),B.y,f,f,new A.ah(B.Y,f,k,j,f,f,B.P),f,f,f,B.kN,f,f,f),f,!0,f,f,f,f,f,f,f,f,f,f,m,f,f,f,f,f,f,f),f))
 m=t.rD
 m=A.G(new A.ab(B.pC,new A.b6_(),m),m.i("af.E"))
@@ -69628,9 +69629,9 @@ A.b5N.prototype={
 $1(a){var s=null,r=this.a,q=J.a6(r),p=A.H(q.gn(r)===1?"P Tanpa Izin":""+q.gn(r)+" Murid P Tanpa Izin",s,s,s,s,s,s,s,s),o=t.p,n=A.b([],o)
 for(r=q.gO(r);r.q();)n.push(new A.N(B.a4c,A.H(r.gG(r).b,s,s,s,s,B.bh,s,s,s),s))
 n.push(B.aP)
-n.push(B.bp_)
+n.push(B.bp0)
 r=A.a4(n,B.a0,B.u,B.az)
-return A.hN(A.b([A.ed(B.brJ,s,s,new A.b5L(a),s,s),A.dN(B.bpp,new A.b5M(a),s)],o),s,r,s,p)},
+return A.hN(A.b([A.ed(B.brJ,s,s,new A.b5L(a),s,s),A.dN(B.bpq,new A.b5M(a),s)],o),s,r,s,p)},
 $S:20}
 A.b5L.prototype={
 $0(){return A.ad(this.a,!1).c7(!1)},
@@ -69739,7 +69740,7 @@ return new A.Ba(q,p,r,s,null)},
 $S:607}
 A.b5K.prototype={
 $2(a,b){var s,r,q=null,p=this.a,o=J.v(p.ax,b),n=o.a,m=p.z.h(0,n),l=A.jk(q,A.hq(o.b),1.5,o.cy,o.c==="putra",48,q,q),k=t.p,j=A.b([A.H(o.gaeU(),q,q,q,q,B.dt,q,q,q)],k)
-if(p.x.p(0,n))j.push(B.bpy)
+if(p.x.p(0,n))j.push(B.bpz)
 if(B.o.aG(o.y).length===0)j.push(B.bry)
 n=A.b([l,B.cg,A.aQ(A.a4(j,B.a0,B.u,B.w),1)],k)
 for(s=0;s<4;++s){r=B.pC[s]
@@ -69793,7 +69794,7 @@ case 2:return A.o(o.at(-1),r)}})
 return A.q($async$Iy,r)},
 B(a){var s=this,r=null,q=t.p,p=A.k8(A.b([new A.pi(s.w,s.gaJi(),"Segarkan log",r)],q),!0,r,r,r,r,B.bqL,r,r)
 if(s.f)q=B.a0s
-else q=s.r?A.cY(new A.N(B.ck,A.a4(A.b([B.bpk,B.b6,A.eJ(B.eu,B.eg,new A.b6E(s),r)],q),B.C,B.u,B.az),r),r,r):s.aqh()
+else q=s.r?A.cY(new A.N(B.ck,A.a4(A.b([B.bpl,B.b6,A.eJ(B.eu,B.eg,new A.b6E(s),r)],q),B.C,B.u,B.az),r),r,r):s.aqh()
 return A.cz(p,r,q,r,r,r)},
 aqh(){var s,r,q,p,o,n,m,l,k,j,i=null,h=this.e,g=J.a6(h)
 if(g.gW(h))return B.a0t
@@ -69877,7 +69878,7 @@ p=A.H(p.c,q,q,q,q,B.mf,q,q,q)
 return A.ac(q,A.w1(q,q,n,q,r.length===0?q:A.H(r,q,q,q,q,B.Vv,q,q,q),q,p,q),B.y,B.Y,q,B.mK,q,q,q,q,q,q,q)}}
 A.a51.prototype={
 B(a){var s=null
-return A.cz(s,B.aC,A.kr(!0,A.di(A.a4(A.b([A.ac(s,B.adE,B.y,s,s,B.mJ,s,84,s,s,s,s,84),B.bgh,A.H("Login Ditutup",s,s,s,s,A.fY(B.Q,27,B.U,s),s,s,s),B.cm,B.bpa,B.UO,A.ac(s,B.a2H,B.y,s,s,new A.ah(B.Y,s,A.bq(B.L,B.M,1),A.aj(14),s,s,B.P),s,s,s,B.dU,s,s,1/0),B.m4,A.co(A.dN(B.brN,this.c,A.d3(B.L,s,s,B.ab,B.fn,new A.cD(A.aj(12),B.X),s)),s,1/0),B.aU,A.SA(B.acO,B.brS,this.d,s),B.UP,B.bp4],t.p),B.C,B.u,B.w),s,B.BV,s,B.an),B.b2,!0),s,s,s)}}
+return A.cz(s,B.aC,A.kr(!0,A.di(A.a4(A.b([A.ac(s,B.adE,B.y,s,s,B.mJ,s,84,s,s,s,s,84),B.bgh,A.H("Login Ditutup",s,s,s,s,A.fY(B.Q,27,B.U,s),s,s,s),B.cm,B.bpb,B.UO,A.ac(s,B.a2H,B.y,s,s,new A.ah(B.Y,s,A.bq(B.L,B.M,1),A.aj(14),s,s,B.P),s,s,s,B.dU,s,s,1/0),B.m4,A.co(A.dN(B.brN,this.c,A.d3(B.L,s,s,B.ab,B.fn,new A.cD(A.aj(12),B.X),s)),s,1/0),B.aU,A.SA(B.acO,B.brS,this.d,s),B.UP,B.bp5],t.p),B.C,B.u,B.w),s,B.BV,s,B.an),B.b2,!0),s,s,s)}}
 A.ri.prototype={}
 A.Ox.prototype={
 a3(){return new A.VU()}}
@@ -69911,7 +69912,7 @@ g=o.e
 g=A.bns(new A.afU(B.aYS[g],new A.ee(g,t.f3)),B.fN,A.brC(),B.aV,new A.b6H())
 q=J.hV(7,t.l7)
 for(p=0;p<7;++p)q[p]=A.ac(n,n,B.y,n,n,new A.ah(p===o.e?B.L:B.L.dr(0.35),n,n,n,n,n,B.bK),n,6,B.a5g,n,n,n,6)
-return A.cz(n,B.Q,A.eG(B.bI,A.b([m,A.cY(A.di(new A.eU(B.YJ,A.a4(A.b([l,B.bgi,k,B.cm,j,B.m4,i,B.bgl,h,B.m4,new A.eU(B.YI,g,n),B.aU,A.aV(q,B.C,B.i1,B.w,0),B.bgk,B.bdI,B.bR,B.bqk],s),B.C,B.u,B.w),n),n,B.a5f,B.d5,B.an),n,n)],s),B.a1,B.bB,n),n,n,n)}}
+return A.cz(n,B.Q,A.eG(B.bI,A.b([m,A.cY(A.di(new A.eU(B.YJ,A.a4(A.b([l,B.bgi,k,B.cm,j,B.m4,i,B.bgl,h,B.m4,new A.eU(B.YI,g,n),B.aU,A.aV(q,B.C,B.i1,B.w,0),B.bgk,B.bdI,B.bR,B.boK],s),B.C,B.u,B.w),n),n,B.a5f,B.d5,B.an),n,n)],s),B.a1,B.bB,n),n,n,n)}}
 A.b6J.prototype={
 $1(a){var s=this.a
 if(s.c==null)return
@@ -70001,7 +70002,7 @@ $0(){return this.a.Bx(this.b)},
 $S:0}
 A.G6.prototype={
 B(a){var s=null
-return A.cz(A.k8(s,!0,s,s,s,s,B.bqa,s,s),s,new A.cg(new A.aGU(),s,A.a6N(),s,t._v),s,s,s)}}
+return A.cz(A.k8(s,!0,s,s,s,s,B.bqb,s,s),s,new A.cg(new A.aGU(),s,A.a6N(),s,t._v),s,s,s)}}
 A.aGU.prototype={
 $2(a,b){var s,r,q,p,o=null,n=b.b
 if(n==null)return B.mQ
@@ -70104,7 +70105,7 @@ break
 case 7:case 1:return A.p(q,r)
 case 2:return A.o(o.at(-1),r)}})
 return A.q($async$wH,r)},
-B(a){var s=null,r=A.k8(s,!0,s,s,s,s,B.bqc,s,s),q=this.d
+B(a){var s=null,r=A.k8(s,!0,s,s,s,s,B.bqd,s,s),q=this.d
 return A.cz(r,s,new A.cg(new A.b83(this),s,A.dY("teachers",A.bmg(),t.aq),new A.ee(q,t.f3),t.iB),s,s,s)}}
 A.b7R.prototype={
 $0(){return this.a.e=!0},
@@ -70220,7 +70221,7 @@ p=A.H(r.b+"\nDiblokir "+p,s,s,s,s,B.cC,s,s,s)
 return A.ac(s,A.w1(s,!0,o,s,p,s,q,A.ed(B.yy,s,s,this.d?s:this.e,s,s)),B.y,B.Y,s,B.mK,s,s,s,s,s,s,s)}}
 A.ahk.prototype={
 B(a){var s=null
-return A.cY(new A.N(B.ck,A.a4(A.b([B.bpe,B.b6,A.eJ(B.eu,B.eg,this.c,s)],t.p),B.C,B.u,B.az),s),s,s)}}
+return A.cY(new A.N(B.ck,A.a4(A.b([B.bpf,B.b6,A.eJ(B.eu,B.eg,this.c,s)],t.p),B.C,B.u,B.az),s),s,s)}}
 A.wk.prototype={
 a3(){return new A.Wq()}}
 A.Wq.prototype={
@@ -70505,7 +70506,7 @@ o=A.ac(h,A.a4(A.b([B.bvR,new A.VF(n,!1,i.gaGy(),h),B.fA,B.bvQ,new A.VF(m,l==null
 p=i.w?h:i.gaGm()
 n=A.d3(B.Q,h,h,B.bU,B.kL,new A.cD(A.aj(28),B.X),h)
 e=A.b([new A.hA(e,h),new A.O4(r,g,s,h),new A.acr(q,i.garK(),h),o,new A.N(B.a4K,A.co(A.dN(A.H(i.w?"Menyimpan...":"Simpan Izin",h,h,h,h,B.VS,h,h,h),p,n),h,1/0),h)],j)
-if(i.a.r!=null)e.push(new A.N(B.iP,A.cY(A.ed(B.bqb,h,h,i.gaBw(),h,h),h,h),h))
+if(i.a.r!=null)e.push(new A.N(B.iP,A.cY(A.ed(B.bqc,h,h,i.gaBw(),h,h),h,h),h))
 else e.push(B.eC)
 return new A.oZ(f,"Ada izin pulang yang belum disimpan.","/dialog-perubahan-izin",new A.b8q(i),A.cz(h,B.aC,A.a4(A.b([new A.dC("Izin Pulang",g.toUpperCase()+" \xb7 LOKAL "+d,!1,new A.b8r(a),h,h),A.aQ(A.di(A.a4(e,B.a0,B.u,B.w),h,h,h,B.an),1)],j),B.C,B.u,B.w),h,h,h),h)}}
 A.b8m.prototype={
@@ -70531,7 +70532,7 @@ $0(){return this.a.w=!1},
 $S:0}
 A.b8k.prototype={
 $1(a){var s=null,r=A.H("Izin pulang "+this.a.a.d.b+" akan dihapus. Murid keluar dari daftar Kembali.",s,s,s,s,s,s,s,s)
-return A.hN(A.b([A.ed(B.ch,s,s,new A.b8i(a),s,s),A.dN(B.h6,new A.b8j(a),A.d3(B.aD,s,s,s,s,s,s))],t.p),s,r,s,B.bpb)},
+return A.hN(A.b([A.ed(B.ch,s,s,new A.b8i(a),s,s),A.dN(B.h6,new A.b8j(a),A.d3(B.aD,s,s,s,s,s,s))],t.p),s,r,s,B.bpc)},
 $S:20}
 A.b8i.prototype={
 $0(){return A.ad(this.a,!1).c7(!1)},
@@ -71224,7 +71225,7 @@ q=k[p-1]
 o=A.h2(m,m,B.acw,m,m,q>1?new A.aID(b,p,k):m,m,m,m)
 n=A.H(""+q+" bulan",m,m,m,m,m,m,m,m)
 l.push(A.aV(A.b([new A.hv(1,B.cJ,j,m),o,n,A.h2(m,m,B.acv,m,m,q<6?new A.aIE(b,p,k):m,m,m,m)],s),B.C,B.u,B.w,0))}l.push(B.aP)
-l.push(B.bpK)
+l.push(B.bpL)
 l=A.a4(l,B.a0,B.u,B.az)
 return A.hN(A.b([A.ed(B.ch,m,m,new A.aIF(a),m,m),A.dN(B.brc,new A.aIG(a),m)],s),m,l,m,B.bqB)},
 $S:696}
@@ -71585,7 +71586,7 @@ B(a){var s=null,r=A.aj(14),q=A.bq(B.L,B.M,1),p=A.aj(14),o=this.c,n=t.p
 return A.dQ(!1,r,!0,A.ac(s,A.aV(A.b([new A.a45(o,s),B.qP,A.aQ(A.a4(A.b([A.H(o?"Guru Perempuan":"Guru Laki-laki",s,s,s,s,B.VO,s,s,s),B.cd,A.H(""+this.d+" guru",s,s,s,s,B.cC,s,s,s)],n),B.a0,B.u,B.w),1),B.ea],n),B.C,B.u,B.w,0),B.y,s,s,new A.ah(B.Y,s,q,p,s,s,B.P),s,s,s,B.dU,s,s,1/0),s,!0,s,s,s,s,s,s,s,s,s,s,this.e,s,s,s,s,s,s,s)}}
 A.afM.prototype={
 B(a){var s=null,r=A.aj(14),q=A.bq(B.dQ,B.M,1),p=A.aj(14),o=t.p
-return A.dQ(!1,r,!0,A.ac(s,A.aV(A.b([A.ac(s,B.adb,B.y,s,s,B.YX,s,48,s,s,s,s,48),B.qP,A.aQ(A.a4(A.b([B.bpq,B.cd,A.H(""+this.c+" guru",s,s,s,s,B.cC,s,s,s)],o),B.a0,B.u,B.w),1),B.ea],o),B.C,B.u,B.w,0),B.y,s,s,new A.ah(B.Y,s,q,p,s,s,B.P),s,s,s,B.dU,s,s,1/0),s,!0,s,s,s,s,s,s,s,s,s,s,this.d,s,s,s,s,s,s,s)}}
+return A.dQ(!1,r,!0,A.ac(s,A.aV(A.b([A.ac(s,B.adb,B.y,s,s,B.YX,s,48,s,s,s,s,48),B.qP,A.aQ(A.a4(A.b([B.bpr,B.cd,A.H(""+this.c+" guru",s,s,s,s,B.cC,s,s,s)],o),B.a0,B.u,B.w),1),B.ea],o),B.C,B.u,B.w,0),B.y,s,s,new A.ah(B.Y,s,q,p,s,s,B.P),s,s,s,B.dU,s,s,1/0),s,!0,s,s,s,s,s,s,s,s,s,s,this.d,s,s,s,s,s,s,s)}}
 A.w8.prototype={
 I(){return"ModeLokal."+this.b}}
 A.nv.prototype={
@@ -71736,7 +71737,7 @@ $0(){return this.a.d=this.b},
 $S:0}
 A.b9v.prototype={
 $1(a){var s=null,r=A.H("Hapus lokal "+this.a+this.b+"?",s,s,s,s,s,s,s,s)
-return A.hN(A.b([A.ed(B.ch,s,s,new A.b9t(a),s,s),A.dN(B.h6,new A.b9u(a),A.d3(B.q8,s,s,s,s,s,s))],t.p),s,B.bqd,s,r)},
+return A.hN(A.b([A.ed(B.ch,s,s,new A.b9t(a),s,s),A.dN(B.h6,new A.b9u(a),A.d3(B.q8,s,s,s,s,s,s))],t.p),s,B.bqe,s,r)},
 $S:20}
 A.b9t.prototype={
 $0(){return A.ad(this.a,!1).c7(!1)},
@@ -72503,7 +72504,7 @@ A.aD(s,"Excel rekap guru diunduh.",!1)},
 B(a){var s,r,q,p=this,o=null,n="laki-laki",m="perempuan",l=p.w,k=p.a.d,j=p.x
 if(p.e)s=B.a0I
 else{s=t.p
-if(p.f)s=A.cY(new A.N(B.ck,A.a4(A.b([B.bpV,B.b6,A.eJ(B.eu,B.eg,p.gaHZ(),o)],s),B.C,B.u,B.az),o),o,o)
+if(p.f)s=A.cY(new A.N(B.ck,A.a4(A.b([B.bpW,B.b6,A.eJ(B.eu,B.eg,p.gaHZ(),o)],s),B.C,B.u,B.az),o),o,o)
 else{r=p.d
 r===$&&A.a()
 s=A.b([B.bcE,new A.wj(r,p.gaI_(),o)],s)
@@ -72744,7 +72745,7 @@ if(q.length===0)p.push(B.b9t)
 else p.push(new A.akN(q,n))
 p.push(B.b6)
 o=q.length===0?n:new A.bbh(s,q)
-o=A.aQ(A.jt(B.acI,B.bq3,o,A.ju(n,n,n,n,n,n,n,n,n,B.Q,n,n,n,n,n,B.e3,n,n,n,n)),1)
+o=A.aQ(A.jt(B.acI,B.bq4,o,A.ju(n,n,n,n,n,n,n,n,n,B.Q,n,n,n,n,n,B.e3,n,n,n,n)),1)
 s=q.length===0?n:new A.bbi(s,q)
 p.push(A.aV(A.b([o,B.bA,A.aQ(A.jt(B.vA,B.jL,s,A.ju(n,n,n,n,n,n,n,n,n,B.Q,n,n,n,n,n,B.e3,n,n,n,n)),1)],r),B.C,B.u,B.w,0))
 return A.oL(p,B.c2,n,!1)},
@@ -73271,7 +73272,7 @@ break
 case 5:case 1:return A.p(q,r)
 case 2:return A.o(o.at(-1),r)}})
 return A.q($async$IG,r)},
-B(a){var s=null,r=A.k8(s,!0,s,s,s,s,B.bp0,s,s),q=this.d
+B(a){var s=null,r=A.k8(s,!0,s,s,s,s,B.bp1,s,s),q=this.d
 return A.cz(r,s,new A.cg(new A.bdJ(this),s,A.bQp(),new A.ee(q,t.f3),t.QG),s,s,s)}}
 A.bdF.prototype={
 $0(){return this.a.e=!0},
@@ -73301,7 +73302,7 @@ $S:0}
 A.afL.prototype={
 B(a){var s,r,q,p=null,o=this.c,n=o.f,m=A.bq(n&&!o.b?B.aD:B.bF,B.M,1),l=A.aj(12),k=t.p,j=A.b([B.bqV,B.cm],k)
 n=!n
-if(n)j.push(B.bpj)
+if(n)j.push(B.bpk)
 else{s=o.b
 r=s?B.a1M:B.tQ
 q=s?B.fS:B.es
@@ -73394,7 +73395,7 @@ if(i==null)i=0
 j=A.bq(B.bF,B.M,1)
 s=A.aj(12)
 r=t.p
-q=A.b([B.bpm,B.cm],r)
+q=A.b([B.bpn,B.cm],r)
 if(l.e)q.push(B.b4M)
 else{p=l.r
 if(p!=null)B.j.L(q,A.b([A.H(p,k,k,k,k,B.cC,k,k,k),B.aP,A.ed(B.eg,k,k,l.gaDN(),k,k)],r))
@@ -73698,7 +73699,7 @@ if(s.length===0)return r
 if(r.length===0)return s
 return s+", "+r},
 B(a){var s=null
-return A.cz(A.k8(s,!0,s,s,s,s,B.bpz,s,s),s,new A.cg(new A.bej(this),s,A.bQq(this.a.c),s,t._J),s,s,s)}}
+return A.cz(A.k8(s,!0,s,s,s,s,B.bpA,s,s),s,new A.cg(new A.bej(this),s,A.bQq(this.a.c),s,t._J),s,s,s)}}
 A.beb.prototype={
 $0(){return this.a.e=!0},
 $S:0}
@@ -73823,7 +73824,7 @@ return A.zf(new A.b6e(),s,t.y)}}
 A.b6e.prototype={
 $2(a,b){var s=null
 if(b.b!==!0)return B.bO
-return A.a4(A.b([B.cm,A.ac(s,B.boL,B.y,s,s,new A.ah(B.c1,s,s,A.aj(999),s,s,B.P),s,s,s,B.up,s,s,s),B.cm,B.afv],t.p),B.C,B.u,B.w)},
+return A.a4(A.b([B.cm,A.ac(s,B.boM,B.y,s,s,new A.ah(B.c1,s,s,A.aj(999),s,s,B.P),s,s,s,B.up,s,s,s),B.cm,B.afv],t.p),B.C,B.u,B.w)},
 $S:808}
 A.IQ.prototype={
 B(a){var s=null,r=A.bq(B.bF,B.M,1),q=A.aj(12),p=A.b([A.H(this.c,s,s,s,s,A.fY(B.Q,14,B.U,s),s,s,s),B.f5],t.p)
@@ -74024,7 +74025,7 @@ if(o.dx===3)i.push(o.aCR())
 i=A.aQ(A.di(A.a4(i,B.bM,B.u,B.w),n,B.a53,B.d5,B.an),1)
 s=A.b([],j)
 if(o.dx>0){r=o.dy?n:new A.beF(o)
-s.push(A.aQ(A.Pi(B.bqe,r,A.ju(n,n,n,n,n,n,n,n,n,B.Q,n,n,B.kL,n,n,B.Yc,n,n,n,n)),1))}if(o.dx>0)s.push(B.bA)
+s.push(A.aQ(A.Pi(B.bqf,r,A.ju(n,n,n,n,n,n,n,n,n,B.Q,n,n,B.kL,n,n,B.Yc,n,n,n,n)),1))}if(o.dx>0)s.push(B.bA)
 if(o.dy)r=n
 else r=o.dx===3?o.gaKD():o.gaCT()
 q=A.d3(B.Q,n,n,n,B.kL,n,n)
@@ -74037,9 +74038,9 @@ return A.a4(A.b([new A.N(B.dS,A.H("Nama Lengkap *",r,r,r,r,B.f8,r,r,r),r),A.f8(r
 aCP(){var s=this
 return s.aCA(s.z,s.Q,"Ayah",s.x,new A.bel(s),s.as,s.y)},
 aCS(){var s=this
-return A.a4(A.b([s.a4r(s.ay,s.ch,"Wali",s.at,new A.bex(s),!0,s.CW,s.ax),B.aU,B.bpw],t.p),B.bM,B.u,B.w)},
+return A.a4(A.b([s.a4r(s.ay,s.ch,"Wali",s.at,new A.bex(s),!0,s.CW,s.ax),B.aU,B.bpx],t.p),B.bM,B.u,B.w)},
 a4r(a,b,c,d,e,f,g,h){var s,r,q=null,p=t.p,o=A.b([A.ac(q,q,B.y,q,q,B.mI,q,8,q,q,q,q,8),B.bA,A.H(c,q,q,q,q,A.fY(B.Q,16,B.U,q),q,q,q)],p)
-if(f)o.push(B.bpJ)
+if(f)o.push(B.bpK)
 o.push(B.bA)
 o.push(B.a9P)
 o=A.aV(o,B.C,B.u,B.w,0)
@@ -75196,7 +75197,7 @@ break}A.ad(n,!1).bb(A.bP(new A.bg4(m,a,o),new A.aS("/ubah-biodata-guru/"+a.a,nul
 case 1:return A.p(q,r)}})
 return A.q($async$Gm,r)},
 B(a){var s=null
-return A.cz(A.k8(s,!0,s,s,s,s,this.ga_X()?A.aV(A.b([B.VY,B.UL,A.ac(s,B.bpN,B.y,s,s,new A.ah(B.L,s,s,A.aj(999),s,s,B.P),s,s,s,B.a5o,s,s,s)],t.p),B.C,B.u,B.az,0):B.VY,s,s),s,new A.cg(new A.bga(this),s,A.bq3(this.a.c.a),s,t.Fv),s,s,s)}}
+return A.cz(A.k8(s,!0,s,s,s,s,this.ga_X()?A.aV(A.b([B.VY,B.UL,A.ac(s,B.bpO,B.y,s,s,new A.ah(B.L,s,s,A.aj(999),s,s,B.P),s,s,s,B.a5o,s,s,s)],t.p),B.C,B.u,B.az,0):B.VY,s,s),s,new A.cg(new A.bga(this),s,A.bq3(this.a.c.a),s,t.Fv),s,s,s)}}
 A.bg7.prototype={
 $0(){var s=this.a,r=this.b,q=r.a!==B.c5
 s.e=!q||r.b.p(0,"keluarkan_pengguna")
@@ -75452,7 +75453,7 @@ o=A.k8(h,!n.e&&!n.r,h,h,h,h,o,h,h)
 n=t.p
 m=A.b([],n)
 if(i.a.e)m.push(B.bqn)
-if(i.a.r)m.push(B.bpM)
+if(i.a.r)m.push(B.bpN)
 if(i.a.w)B.j.L(m,A.b([new A.l6(A.b([A.dq(h,h,h,h,h,h,h,h,h,h,"Mengubah sebagai admin \u2014 perubahan ini tercatat di Log Aktivitas.")],t.R),h),B.aU],n))
 l=i.a
 if(l.e||l.r)m.push(B.b6)
@@ -75871,7 +75872,7 @@ break}n.E(new A.bgV(n))
 case 1:return A.p(q,r)
 case 2:return A.o(o.at(-1),r)}})
 return A.q($async$J_,r)},
-B(a){var s,r,q=this,p=null,o=A.k8(A.b([new A.pi(q.Q,q.gaL1(),"Segarkan terakhir masuk",p)],t.p),!0,p,p,p,p,B.bpT,p,p)
+B(a){var s,r,q=this,p=null,o=A.k8(A.b([new A.pi(q.Q,q.gaL1(),"Segarkan terakhir masuk",p)],t.p),!0,p,p,p,p,B.bpU,p,p)
 if(q.y)s=q.a4H("Daftar guru belum bisa dimuat.\nPeriksa koneksi, lalu coba lagi.",new A.bgY(q))
 else if(q.z)s=q.a4H("Riwayat masuk belum bisa dimuat.\nPeriksa koneksi, lalu coba lagi.",new A.bgZ(q))
 else{s=q.w
@@ -76728,7 +76729,7 @@ $1(a){return a[0].toUpperCase()},
 $S:52}
 A.blA.prototype={
 $1(a){var s=null,r=new A.blB(this.a,a)
-return A.kr(!0,new A.N(B.nB,A.a4(A.b([A.ac(s,s,B.y,s,s,new A.ah(B.dR,s,s,A.aj(2),s,s,B.P),s,4,s,s,s,s,40),B.aU,B.bpr,B.eD,A.w1(s,s,B.ad7,new A.bly(r),B.brK,s,B.bpO,s),A.w1(s,s,B.acA,new A.blz(r),B.bpF,s,B.bqw,s)],t.p),B.C,B.u,B.az),s),B.b2,!0)},
+return A.kr(!0,new A.N(B.nB,A.a4(A.b([A.ac(s,s,B.y,s,s,new A.ah(B.dR,s,s,A.aj(2),s,s,B.P),s,4,s,s,s,s,40),B.aU,B.bps,B.eD,A.w1(s,s,B.ad7,new A.bly(r),B.brK,s,B.bpP,s),A.w1(s,s,B.acA,new A.blz(r),B.bpG,s,B.bqw,s)],t.p),B.C,B.u,B.az),s),B.b2,!0)},
 $S:366}
 A.blB.prototype={
 ahq(a){var s=0,r=A.r(t.H),q=this,p,o,n
@@ -77035,7 +77036,7 @@ r=r?B.adF:s
 return A.hg(s,A.ac(B.Z,r,B.y,s,s,new A.ah(q,s,p,o,s,s,B.P),s,22,s,s,s,s,22),B.ao,!1,s,s,s,s,s,s,s,s,s,s,s,s,s,s,this.d,s,s,s,s,s,s)}}
 A.a0j.prototype={
 B(a){var s=null,r=this.e,q=A.bq(B.L,B.M,1),p=A.aj(10),o=A.aj(999)
-return A.hg(s,A.ac(s,A.aV(A.b([new A.Oc(this.d,r,s),B.bA,B.bps,B.h1,A.ac(s,A.H(""+this.c+" murid",s,s,s,s,B.VP,s,s,s),B.y,s,s,new A.ah(B.Y,s,s,o,s,s,B.P),s,s,s,B.nv,s,s,s)],t.p),B.C,B.u,B.w,0),B.y,s,s,new A.ah(B.a1X,s,q,p,s,s,B.P),s,s,B.a4T,B.a4w,s,s,s),B.ao,!1,s,s,s,s,s,s,s,s,s,s,s,s,s,s,r,s,s,s,s,s,s)}}
+return A.hg(s,A.ac(s,A.aV(A.b([new A.Oc(this.d,r,s),B.bA,B.bpt,B.h1,A.ac(s,A.H(""+this.c+" murid",s,s,s,s,B.VP,s,s,s),B.y,s,s,new A.ah(B.Y,s,s,o,s,s,B.P),s,s,s,B.nv,s,s,s)],t.p),B.C,B.u,B.w,0),B.y,s,s,new A.ah(B.a1X,s,q,p,s,s,B.P),s,s,B.a4T,B.a4w,s,s,s),B.ao,!1,s,s,s,s,s,s,s,s,s,s,s,s,s,s,r,s,s,s,s,s,s)}}
 A.a0i.prototype={
 B(a){var s,r=this,q=null,p=r.c,o=p>0&&!r.e,n=t.p
 p=A.aQ(A.a4(A.b([A.H(r.e?"Menghapus\u2026":""+p+" dipilih",q,q,q,q,B.VE,q,q,q),B.cd,A.H("Lokal "+r.d,q,q,q,q,B.VT,q,q,q)],n),B.a0,B.u,B.az),1)
@@ -77059,7 +77060,7 @@ else k=j?"Perempuan":"Belum diisi"
 l=A.b([n,B.b6,A.ac(p,A.a4(A.b([s,B.cd,new A.i9("Tempat Lahir",m.d,p),new A.i9("Tanggal Lahir",r,p),new A.i9("Alamat",m.f,p),new A.DC("Nomor HP",m.r,p),new A.i9("Jenis Kelamin",k,p),new A.i9("Catatan",m.y,p)],i),B.a0,B.u,B.w),B.y,p,p,new A.ah(B.Y,p,o,l,p,p,B.P),p,p,p,B.uw,p,p,p)],i)
 o=q.e
 if(o){n=q.f?p:q.w
-B.j.L(l,A.b([B.fA,A.co(A.dN(B.bpC,n,A.d3(B.L,p,p,B.ab,B.fn,new A.cD(A.aj(12),B.X),p)),p,1/0)],i))}if(q.d){n=q.f?p:q.r
+B.j.L(l,A.b([B.fA,A.co(A.dN(B.bpD,n,A.d3(B.L,p,p,B.ab,B.fn,new A.cD(A.aj(12),B.X),p)),p,1/0)],i))}if(q.d){n=q.f?p:q.r
 B.j.L(l,A.b([B.fA,A.co(A.dN(B.bqm,n,A.d3(B.aD,p,p,B.Y,B.fn,new A.cD(A.aj(12),B.X),p)),p,1/0),B.aP,B.bqU],i))}l.push(B.fA)
 l.push(A.H(o?"Admin bisa mengubah biodata ini dengan tombol di atas \u2014 perubahan tercatat di Log Aktivitas.":"\ud83d\udd12 Tampilan baca saja \u2014 biodata ini hanya bisa dilihat,\ntidak bisa diubah. Hanya pemiliknya (dan admin) yang bisa mengubah.",p,p,p,p,B.bjK,B.a4,p,p))
 return A.a4(l,B.bM,B.u,B.w)}}
@@ -77086,7 +77087,7 @@ $1(a){return new A.Ez(this.a,this.b,null)},
 $S:380}
 A.Ez.prototype={
 B(a){var s=null,r=A.aj(18),q=""+this.c,p=t.p
-return A.a23(s,B.Y,new A.eU(B.zK,A.di(new A.N(B.BT,A.a4(A.b([A.ac(B.Z,B.W0,B.y,s,s,B.te,s,56,s,s,s,s,56),B.bR,A.H("Hapus "+q+" biodata?",s,s,s,s,A.fY(B.ab,19,B.U,s),B.a4,s,s),B.f5,A.H("Lokal "+this.d,s,s,s,s,B.mj,B.a4,s,s),B.aU,A.qN(s,s,s,B.cx,s,s,!0,s,A.dq(A.b([B.biI,A.dq(s,s,s,s,s,s,s,s,s,B.yt,q+" murid"),B.biU,B.Vu,B.bi9],t.R),s,s,s,s,s,s,s,s,B.VQ,s),B.a4,s,s,B.aR,B.bv),B.fA,A.aV(A.b([A.aQ(A.Pi(B.boN,new A.atE(a),A.ju(s,s,s,s,s,s,s,s,s,B.ep,s,s,B.fO,s,new A.cD(A.aj(10),B.X),B.t9,s,s,s,s)),1),B.bA,A.aQ(A.dN(B.W5,new A.atF(a),A.d3(B.aD,s,s,B.Y,B.fO,new A.cD(A.aj(10),B.X),s)),1)],p),B.C,B.u,B.w,0)],p),B.C,B.u,B.az),s),s,s,s,B.an),s),s,s,s,s,B.lV,s,new A.cD(r,B.X),s)}}
+return A.a23(s,B.Y,new A.eU(B.zK,A.di(new A.N(B.BT,A.a4(A.b([A.ac(B.Z,B.W0,B.y,s,s,B.te,s,56,s,s,s,s,56),B.bR,A.H("Hapus "+q+" biodata?",s,s,s,s,A.fY(B.ab,19,B.U,s),B.a4,s,s),B.f5,A.H("Lokal "+this.d,s,s,s,s,B.mj,B.a4,s,s),B.aU,A.qN(s,s,s,B.cx,s,s,!0,s,A.dq(A.b([B.biI,A.dq(s,s,s,s,s,s,s,s,s,B.yt,q+" murid"),B.biU,B.Vu,B.bi9],t.R),s,s,s,s,s,s,s,s,B.VQ,s),B.a4,s,s,B.aR,B.bv),B.fA,A.aV(A.b([A.aQ(A.Pi(B.boO,new A.atE(a),A.ju(s,s,s,s,s,s,s,s,s,B.ep,s,s,B.fO,s,new A.cD(A.aj(10),B.X),B.t9,s,s,s,s)),1),B.bA,A.aQ(A.dN(B.W5,new A.atF(a),A.d3(B.aD,s,s,B.Y,B.fO,new A.cD(A.aj(10),B.X),s)),1)],p),B.C,B.u,B.w,0)],p),B.C,B.u,B.az),s),s,s,s,B.an),s),s,s,s,s,B.lV,s,new A.cD(r,B.X),s)}}
 A.atE.prototype={
 $0(){return A.ad(this.a,!1).c7(!1)},
 $S:0}
@@ -77110,7 +77111,7 @@ $1(a){return new A.EB(this.a,this.b,null)},
 $S:382}
 A.EB.prototype={
 B(a){var s=null,r=A.aj(18)
-return A.a23(s,B.Y,new A.eU(B.YC,A.di(new A.N(B.a58,A.a4(A.b([A.ac(B.Z,B.bpx,B.y,s,s,B.te,s,52,s,s,s,s,52),B.aU,A.H(this.c,s,s,s,s,A.fY(B.Q,17,B.U,s),B.a4,s,s),B.aP,A.qN(s,s,s,B.cx,s,s,!0,s,A.dq(A.b([A.dq(s,s,s,s,s,s,s,s,s,s,this.d),B.biZ,B.big,B.biD,B.biQ,B.biL,B.bi8],t.R),s,s,s,s,s,s,s,s,B.bnV,s),B.a4,s,s,B.aR,B.bv),B.fA,A.co(A.dN(B.boy,new A.atI(a),A.d3(B.L,s,s,B.ab,B.iO,new A.cD(A.aj(12),B.X),s)),s,1/0),B.cm,A.co(A.dN(B.bru,new A.atJ(a),A.d3(B.aD,s,s,B.Y,B.iO,new A.cD(A.aj(12),B.X),s)),s,1/0),B.cd,A.ed(B.boO,s,s,new A.atK(a),s,A.x8(s,s,s,s,s,s,s,s,s,s,s,B.c1,s,s,s,s,B.kR,s,s,s,s,s,s,s,s))],t.p),B.C,B.u,B.az),s),s,s,s,B.an),s),s,s,s,s,B.lV,s,new A.cD(r,B.X),s)}}
+return A.a23(s,B.Y,new A.eU(B.YC,A.di(new A.N(B.a58,A.a4(A.b([A.ac(B.Z,B.bpy,B.y,s,s,B.te,s,52,s,s,s,s,52),B.aU,A.H(this.c,s,s,s,s,A.fY(B.Q,17,B.U,s),B.a4,s,s),B.aP,A.qN(s,s,s,B.cx,s,s,!0,s,A.dq(A.b([A.dq(s,s,s,s,s,s,s,s,s,s,this.d),B.biZ,B.big,B.biD,B.biQ,B.biL,B.bi8],t.R),s,s,s,s,s,s,s,s,B.bnV,s),B.a4,s,s,B.aR,B.bv),B.fA,A.co(A.dN(B.boy,new A.atI(a),A.d3(B.L,s,s,B.ab,B.iO,new A.cD(A.aj(12),B.X),s)),s,1/0),B.cm,A.co(A.dN(B.bru,new A.atJ(a),A.d3(B.aD,s,s,B.Y,B.iO,new A.cD(A.aj(12),B.X),s)),s,1/0),B.cd,A.ed(B.boP,s,s,new A.atK(a),s,A.x8(s,s,s,s,s,s,s,s,s,s,s,B.c1,s,s,s,s,B.kR,s,s,s,s,s,s,s,s))],t.p),B.C,B.u,B.az),s),s,s,s,B.an),s),s,s,s,s,B.lV,s,new A.cD(r,B.X),s)}}
 A.atI.prototype={
 $0(){return A.ad(this.a,!1).c7(B.bb3)},
 $S:0}
@@ -77557,7 +77558,7 @@ p=A.qN(k,k,k,B.cx,k,k,!0,k,A.dq(A.b([o,p,A.dq(k,k,k,k,k,k,k,k,k,B.VL,j==null?"\u
 o=l.d
 n=l.e
 m=t.p
-n=A.b([i,B.bR,r,B.f5,p,B.aP,A.buF(B.A2,k,n,B.kA,o,k,n.lP(31536e9),new A.b63(l),k),A.ac(k,B.bq7,B.y,k,k,new A.ah(B.L.dr(0.1),k,A.bq(B.L.dr(0.45),B.M,1),A.aj(12),k,k,B.P),k,k,k,B.dn,k,k,k)],m)
+n=A.b([i,B.bR,r,B.f5,p,B.aP,A.buF(B.A2,k,n,B.kA,o,k,n.lP(31536e9),new A.b63(l),k),A.ac(k,B.bq8,B.y,k,k,new A.ah(B.L.dr(0.1),k,A.bq(B.L.dr(0.45),B.M,1),A.aj(12),k,k,B.P),k,k,k,B.dn,k,k,k)],m)
 i=q==null
 if(!i)B.j.L(n,A.b([B.aP,A.H(q,k,k,k,k,B.bnL,k,k,k)],m))
 n.push(B.bgg)
@@ -77596,7 +77597,7 @@ A.blE.prototype={
 $1(a){return A.ad(this.a,!1).c7(a)},
 $S:10}
 A.FK.prototype={
-B(a){var s,r,q,p,o,n,m=this,l=null,k=A.b([A.ac(l,l,B.y,l,l,new A.ah(B.dR,l,l,A.aj(2),l,l,B.P),l,4,l,l,l,l,40),B.aU,B.bq2,B.m5,A.H("Atur akses ubin "+m.c+" untuk kelompok guru yang mana?",l,l,l,l,B.cC,B.a4,l,l),B.bR],t.p)
+B(a){var s,r,q,p,o,n,m=this,l=null,k=A.b([A.ac(l,l,B.y,l,l,new A.ah(B.dR,l,l,A.aj(2),l,l,B.P),l,4,l,l,l,l,40),B.aU,B.bq3,B.m5,A.H("Atur akses ubin "+m.c+" untuk kelompok guru yang mana?",l,l,l,l,B.cC,B.a4,l,l),B.bR],t.p)
 for(s=["laki-laki","perempuan"],r="GURU PEREMPUAN \xb7 "+m.e+" guru",q="GURU LAKI-LAKI \xb7 "+m.d+" guru",p=0;p<2;++p){o=s[p]
 n=A.d3(B.Q,l,l,l,l,l,l)
 k.push(new A.N(B.nr,new A.bs(1/0,l,A.dN(A.H(o==="laki-laki"?q:r,l,l,l,l,l,l,l,l),new A.aCp(m,o),n),l),l))}return new A.N(B.nB,A.a4(k,B.C,B.u,B.az),l)}}
@@ -77769,7 +77770,7 @@ s=A.aj(14)
 n=p?A.qN(i,i,i,B.cx,i,i,!0,i,A.dq(j.aKp(q),i,i,i,i,i,i,i,i,B.blV,i),B.aM,i,i,B.aR,B.bv):B.bqF
 o.push(A.ac(i,n,B.y,i,i,new A.ah(B.a1f,i,i,s,i,i,B.P),i,i,i,B.c2,i,i,1/0))
 o.push(B.aU)
-o.push(B.bpS)
+o.push(B.bpT)
 o.push(B.bR)
 s=p?new A.b6d(q,a):i
 o.push(A.co(A.eJ(B.D1,B.bqC,s,A.d3(B.B6,B.dz,i,B.W,B.fn,new A.cD(A.aj(12),B.X),i)),i,1/0))
@@ -77891,8 +77892,8 @@ A.FX.prototype={
 B(a){var s=this,r=null,q=A.p8(a).abu(A.dm([B.c6,B.dZ,B.d0,B.de],t.Au),!1),p=s.ay,o=t.p,n=A.b([new A.afR(s.c,s.w,new A.aFo(s),new A.aFp(s),r),new A.afQ(A.b([new A.afH(B.vw,"Profil Saya","Lihat & ubah biodata",s.cx,r)],o),r),B.bvO],o)
 if(s.d)n.push(new A.ach(s.e,s.f,s.r,s.x,s.y,s.z,s.Q,s.as,s.at,s.ax,s.db,s.dx,s.dy,s.fr,s.fx,s.cy,s.fy,s.go,s.id,s.k1,s.k2,s.k3,s.k4,s.ok,s.p1,r))
 q=A.aQ(A.bpH(q,A.aOu(A.di(new A.id(A.a4(n,B.bM,B.u,B.w),720,r),p,r,B.d5,B.an),p,B.i4,4,!0)),1)
-p=A.b([A.H("BABUL HUDA OFFICIAL \xb7 Versi 1.10.0",r,r,r,r,B.bjc,B.a4,r,r)],o)
-if(s.p2)p.push(new A.N(B.BH,A.hg(r,B.bpd,B.ao,!1,r,r,r,r,r,r,r,r,r,r,r,r,r,r,s.p3,r,r,r,r,r,r),r))
+p=A.b([A.H("BABUL HUDA OFFICIAL \xb7 Versi 1.10.1",r,r,r,r,B.bjc,B.a4,r,r)],o)
+if(s.p2)p.push(new A.N(B.BH,A.hg(r,B.bpe,B.ao,!1,r,r,r,r,r,r,r,r,r,r,r,r,r,r,s.p3,r,r,r,r,r,r),r))
 return A.a4(A.b([new A.af6(new A.aFq(a),r),q,new A.N(B.a4Y,A.a4(p,B.C,B.u,B.w),r)],o),B.C,B.u,B.w)}}
 A.aFq.prototype={
 $0(){return A.ad(this.a,!1).bc()},
@@ -78179,12 +78180,12 @@ r=s?p:q.r
 B.j.L(n,A.b([B.aU,A.jt(B.acU,A.H(s?"Menyiapkan PDF...":"Download ke PDF",p,p,p,p,p,p,p,p),r,A.ju(p,p,p,p,p,p,p,p,p,B.Q,p,p,B.fO,p,p,B.e3,p,p,p,p))],o))}return A.a4(n,B.bM,B.u,B.w)}}
 A.T2.prototype={
 B(a){var s=null,r=this.c,q=r!=null?B.B6:B.dz
-return A.co(A.eJ(B.D1,B.bq8,r,A.d3(q,s,s,B.W,B.fn,new A.cD(A.aj(12),B.X),s)),s,1/0)}}
+return A.co(A.eJ(B.D1,B.bq9,r,A.d3(q,s,s,B.W,B.fn,new A.cD(A.aj(12),B.X),s)),s,1/0)}}
 A.u9.prototype={
 B(a){var s=null
 return A.co(A.jt(B.add,A.H(this.c,s,s,s,s,s,s,s,s),this.d,A.ju(s,s,B.Y,s,s,s,s,s,s,B.aD,s,s,B.fO,s,new A.cD(A.aj(999),B.X),B.zx,s,s,B.mf,s)),s,1/0)}}
 A.bms.prototype={
-$1(a){var s=null,r=A.H(this.a,s,s,s,s,s,s,s,s),q=t.p,p=A.a4(A.b([A.H(this.b,s,s,s,s,s,s,s,s),B.aP,B.boY],q),B.C,B.u,B.az)
+$1(a){var s=null,r=A.H(this.a,s,s,s,s,s,s,s,s),q=t.p,p=A.a4(A.b([A.H(this.b,s,s,s,s,s,s,s,s),B.aP,B.boZ],q),B.C,B.u,B.az)
 return A.hN(A.b([A.ed(B.ch,s,s,new A.bmq(a),s,s),A.dN(B.bri,new A.bmr(a),A.d3(B.aD,s,s,B.Y,s,s,s))],q),s,p,s,r)},
 $S:20}
 A.bmq.prototype={
@@ -156345,13 +156346,13 @@ B.a06=new A.Ln(null,null,null,null,null,null,null)
 B.a07=new A.Lo(null,null,null,null,null,null)
 B.ck=new A.a2(24,24,24,24)
 B.a4=new A.u3(2,"center")
-B.bp9=new A.V("Hanya admin yang boleh mengimpor data.",null,null,B.a4,null,null,null,null,null,null,null)
-B.b9j=new A.N(B.ck,B.bp9,null)
+B.bpa=new A.V("Hanya admin yang boleh mengimpor data.",null,null,B.a4,null,null,null,null,null,null,null)
+B.b9j=new A.N(B.ck,B.bpa,null)
 B.a08=new A.c3(B.Z,null,null,B.b9j,null)
 B.cG=new A.I(1,0.3411764705882353,0.3254901960784314,0.3058823529411765,B.E)
 B.VM=new A.A(!0,B.cG,null,null,null,null,null,null,null,null,null,null,1.6,null,null,null,null,null,null,null,null,null,null,null,null,null)
-B.bpQ=new A.V("Belum ada pesan.\nTulis pesan pertama di bawah.",null,B.VM,B.a4,null,null,null,null,null,null,null)
-B.a0a=new A.c3(B.Z,null,null,B.bpQ,null)
+B.bpR=new A.V("Belum ada pesan.\nTulis pesan pertama di bawah.",null,B.VM,B.a4,null,null,null,null,null,null,null)
+B.a0a=new A.c3(B.Z,null,null,B.bpR,null)
 B.ds=new A.A(!0,B.cG,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null)
 B.brm=new A.V("Daftar guru tidak bisa dimuat.",null,B.ds,null,null,null,null,null,null,null,null)
 B.tq=new A.c3(B.Z,null,null,B.brm,null)
@@ -156359,18 +156360,18 @@ B.b4X=new A.fS("Memuat rekap...",!1,11,B.L,null)
 B.a0c=new A.c3(B.Z,null,null,B.b4X,null)
 B.JC=new A.fS(null,!1,11,B.L,null)
 B.mQ=new A.c3(B.Z,null,null,B.JC,null)
-B.boZ=new A.V("Daftar murid tidak bisa dimuat.",null,B.ds,null,null,null,null,null,null,null,null)
-B.Ak=new A.c3(B.Z,null,null,B.boZ,null)
-B.bpt=new A.V("Daftar admin tidak bisa dimuat.",null,B.ds,null,null,null,null,null,null,null,null)
-B.a0e=new A.c3(B.Z,null,null,B.bpt,null)
+B.bp_=new A.V("Daftar murid tidak bisa dimuat.",null,B.ds,null,null,null,null,null,null,null,null)
+B.Ak=new A.c3(B.Z,null,null,B.bp_,null)
+B.bpu=new A.V("Daftar admin tidak bisa dimuat.",null,B.ds,null,null,null,null,null,null,null,null)
+B.a0e=new A.c3(B.Z,null,null,B.bpu,null)
 B.b4T=new A.fS("Memuat guru...",!1,11,B.L,null)
 B.a0f=new A.c3(B.Z,null,null,B.b4T,null)
 B.b4L=new A.fS("Memuat status backup...",!1,11,B.L,null)
 B.a0h=new A.c3(B.Z,null,null,B.b4L,null)
 B.b5_=new A.fS("Memuat rekap nilai...",!1,11,B.L,null)
 B.a0i=new A.c3(B.Z,null,null,B.b5_,null)
-B.bpD=new A.V("Biodata ini sudah dihapus.",null,null,null,null,null,null,null,null,null,null)
-B.a0k=new A.c3(B.Z,null,null,B.bpD,null)
+B.bpE=new A.V("Biodata ini sudah dihapus.",null,null,null,null,null,null,null,null,null,null)
+B.a0k=new A.c3(B.Z,null,null,B.bpE,null)
 B.b4S=new A.fS("Memuat pendaftar...",!1,11,B.L,null)
 B.a0l=new A.c3(B.Z,null,null,B.b4S,null)
 B.boA=new A.V("Belum ada murid di lokal ini.",null,B.ds,null,null,null,null,null,null,null,null)
@@ -156379,8 +156380,8 @@ B.b4Y=new A.fS("Memuat lokal...",!1,11,B.L,null)
 B.a0n=new A.c3(B.Z,null,null,B.b4Y,null)
 B.b4N=new A.fS("Memuat biodata...",!1,11,B.L,null)
 B.a0o=new A.c3(B.Z,null,null,B.b4N,null)
-B.bpZ=new A.V("Pesan tidak bisa dimuat.",null,B.ds,null,null,null,null,null,null,null,null)
-B.Am=new A.c3(B.Z,null,null,B.bpZ,null)
+B.bq_=new A.V("Pesan tidak bisa dimuat.",null,B.ds,null,null,null,null,null,null,null,null)
+B.Am=new A.c3(B.Z,null,null,B.bq_,null)
 B.b51=new A.fS("Memuat murid...",!1,11,B.L,null)
 B.mR=new A.c3(B.Z,null,null,B.b51,null)
 B.brA=new A.V("Daftar guru belum bisa dimuat.\nCoba lagi nanti.",null,null,B.a4,null,null,null,null,null,null,null)
@@ -156405,28 +156406,28 @@ B.a0r=new A.c3(B.Z,null,null,B.b7e,null)
 B.b4W=new A.fS("Memuat log aktivitas...",!1,11,B.L,null)
 B.a0s=new A.c3(B.Z,null,null,B.b4W,null)
 B.fC=new A.A(!0,B.aS,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null)
-B.boK=new A.V("Belum ada aktivitas tercatat.\nSetiap penambahan, perubahan, dan penghapusan data, serta guru yang masuk, akan muncul di sini.",null,B.fC,B.a4,null,null,null,null,null,null,null)
-B.b9u=new A.N(B.ck,B.boK,null)
+B.boL=new A.V("Belum ada aktivitas tercatat.\nSetiap penambahan, perubahan, dan penghapusan data, serta guru yang masuk, akan muncul di sini.",null,B.fC,B.a4,null,null,null,null,null,null,null)
+B.b9u=new A.N(B.ck,B.boL,null)
 B.a0t=new A.c3(B.Z,null,null,B.b9u,null)
 B.mb=new A.A(!0,B.aS,null,null,null,null,12,null,null,null,null,null,1.5,null,null,null,null,null,null,null,null,null,null,null,null,null)
-B.bpE=new A.V("Pesan terbuka di WhatsApp \u2014 pilih grup wali murid, lalu ketuk Kirim.",null,B.mb,B.a4,null,null,null,null,null,null,null)
-B.a0w=new A.c3(B.Z,null,null,B.bpE,null)
+B.bpF=new A.V("Pesan terbuka di WhatsApp \u2014 pilih grup wali murid, lalu ketuk Kirim.",null,B.mb,B.a4,null,null,null,null,null,null,null)
+B.a0w=new A.c3(B.Z,null,null,B.bpF,null)
 B.b50=new A.fS("Memuat daftar Kembali...",!1,11,B.L,null)
 B.a0x=new A.c3(B.Z,null,null,B.b50,null)
 B.brs=new A.V("Kabilah tidak bisa dimuat.",null,B.ds,null,null,null,null,null,null,null,null)
 B.a0A=new A.c3(B.Z,null,null,B.brs,null)
-B.bq6=new A.V("Rekap tidak bisa dimuat.",null,B.ds,null,null,null,null,null,null,null,null)
-B.a0B=new A.c3(B.Z,null,null,B.bq6,null)
-B.bq_=new A.V("Belum ada pesan masuk.",null,B.ds,null,null,null,null,null,null,null,null)
-B.a0E=new A.c3(B.Z,null,null,B.bq_,null)
+B.bq7=new A.V("Rekap tidak bisa dimuat.",null,B.ds,null,null,null,null,null,null,null,null)
+B.a0B=new A.c3(B.Z,null,null,B.bq7,null)
+B.bq0=new A.V("Belum ada pesan masuk.",null,B.ds,null,null,null,null,null,null,null,null)
+B.a0E=new A.c3(B.Z,null,null,B.bq0,null)
 B.bxy=new A.aX3(0,"material")
 B.a12=new A.n1(null,null,null,null,null,B.Q,null,null,null,null)
 B.dP=new A.c3(B.Z,null,null,B.a12,null)
 B.bqJ=new A.V("Daftar lokal belum bisa dimuat.\nCoba lagi nanti.",null,null,B.a4,null,null,null,null,null,null,null)
 B.b9J=new A.N(B.ck,B.bqJ,null)
 B.a0G=new A.c3(B.Z,null,null,B.b9J,null)
-B.bp1=new A.V("Daftar murid belum bisa dimuat.\nCoba lagi nanti.",null,null,B.a4,null,null,null,null,null,null,null)
-B.b96=new A.N(B.ck,B.bp1,null)
+B.bp2=new A.V("Daftar murid belum bisa dimuat.\nCoba lagi nanti.",null,null,B.a4,null,null,null,null,null,null,null)
+B.b96=new A.N(B.ck,B.bp2,null)
 B.mS=new A.c3(B.Z,null,null,B.b96,null)
 B.b4R=new A.fS("Memuat rekap guru...",!1,11,B.L,null)
 B.a0I=new A.c3(B.Z,null,null,B.b4R,null)
@@ -156611,16 +156612,16 @@ B.bmj=new A.A(!0,B.Q,null,null,null,null,13.5,B.U,null,null,null,null,1.5,null,n
 B.br9=new A.V("Guru yang sudah terdaftar tetap bisa masuk seperti biasa.",null,B.bmj,null,null,null,null,null,null,null,null)
 B.eD=new A.bs(null,6,null,null)
 B.bn7=new A.A(!0,B.cG,null,null,null,null,13,null,null,null,null,null,1.5,null,null,null,null,null,null,null,null,null,null,null,null,null)
-B.boX=new A.V("Bila kamu guru baru di dayah ini, hubungi admin supaya kunci dibuka atau akunmu didaftarkan.",null,B.bn7,null,null,null,null,null,null,null,null)
-B.b3h=s([B.br9,B.eD,B.boX],t.p)
+B.boY=new A.V("Bila kamu guru baru di dayah ini, hubungi admin supaya kunci dibuka atau akunmu didaftarkan.",null,B.bn7,null,null,null,null,null,null,null,null)
+B.b3h=s([B.br9,B.eD,B.boY],t.p)
 B.a2H=new A.kW(B.an,B.u,B.w,B.a0,null,B.dJ,null,0,B.b3h,null)
 B.h5=new A.A(!0,B.aS,null,null,null,null,11,B.U,null,1.5,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null)
 B.bqM=new A.V("JADWAL OTOMATIS",null,B.h5,null,null,null,null,null,null,null,null)
 B.cm=new A.bs(null,10,null,null)
 B.dt=new A.A(!0,null,null,null,null,null,14,B.U,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null)
-B.bp3=new A.V("Belum aktif",null,B.dt,null,null,null,null,null,null,null,null)
+B.bp4=new A.V("Belum aktif",null,B.dt,null,null,null,null,null,null,null,null)
 B.bqu=new A.V('Backup otomatis berkala belum berjalan. Sementara ini, buat backup lewat tombol "Sinkronkan Sekarang" di atas atau "Backup Drive" di menu.',null,B.mb,null,null,null,null,null,null,null,null)
-B.b15=s([B.bqM,B.cm,B.bp3,B.eD,B.bqu],t.p)
+B.b15=s([B.bqM,B.cm,B.bp4,B.eD,B.bqu],t.p)
 B.a2I=new A.kW(B.an,B.u,B.w,B.a0,null,B.dJ,null,0,B.b15,null)
 B.kx=new A.Ei(0,"none")
 B.cH=new A.Ei(1,"waiting")
@@ -157331,11 +157332,11 @@ B.a9O=new A.hv(1,B.cJ,B.a0g,null)
 B.a3A=new A.EE(1,B.dR,null)
 B.a9P=new A.hv(1,B.cJ,B.a3A,null)
 B.bld=new A.A(!0,B.W,null,null,null,null,12.5,B.U,null,null,null,null,1.5,null,null,null,null,null,null,null,null,null,null,null,null,null)
-B.bqh=new A.V("\ud83d\udd12 Web sedang ditutup sementara \u2014 guru lain melihat halaman tunggu.",null,B.bld,null,null,null,null,null,null,null,null)
-B.a9Q=new A.hv(1,B.cJ,B.bqh,null)
+B.bqi=new A.V("\ud83d\udd12 Web sedang ditutup sementara \u2014 guru lain melihat halaman tunggu.",null,B.bld,null,null,null,null,null,null,null,null)
+B.a9Q=new A.hv(1,B.cJ,B.bqi,null)
 B.VF=new A.A(!0,B.bU,null,null,null,null,12,B.U,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null)
-B.bpY=new A.V("Nama",null,B.VF,null,null,null,null,null,null,null,null)
-B.qe=new A.N(B.uo,B.bpY,null)
+B.bpZ=new A.V("Nama",null,B.VF,null,null,null,null,null,null,null,null)
+B.qe=new A.N(B.uo,B.bpZ,null)
 B.a9R=new A.hv(1,B.cJ,B.qe,null)
 B.VC=new A.A(!0,B.ab,null,null,null,null,20,B.U,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null)
 B.bqq=new A.V("Profil Saya",null,B.VC,B.a4,null,null,null,null,null,null,null)
@@ -158255,8 +158256,8 @@ B.aZj=s([B.C5,B.va,B.vb],A.ak("B<EW>"))
 B.pF=s([0,0,0,0,1,1,2,2,3,3,4,4,5,5,6,6,7,7,8,8,9,9,10,10,11,11,12,12,13,13],t.t)
 B.Xv=new A.lJ("",6,"userDeleted")
 B.IY=s([B.it,B.k9,B.iu,B.iv,B.ka,B.zm,B.Xv,B.zl],A.ak("B<lJ>"))
-B.boP=new A.V("Putra (Thalabah)",null,null,null,null,null,null,null,null,null,null)
-B.a3D=new A.ji("putra",B.boP,B.ej,null,t.fG)
+B.boQ=new A.V("Putra (Thalabah)",null,null,null,null,null,null,null,null,null,null)
+B.a3D=new A.ji("putra",B.boQ,B.ej,null,t.fG)
 B.bqr=new A.V("Putri (Thawaleb)",null,null,null,null,null,null,null,null,null,null)
 B.a3E=new A.ji("putri",B.bqr,B.ej,null,t.fG)
 B.aZF=s([B.a3D,B.a3E],A.ak("B<ji<d>>"))
@@ -158526,8 +158527,8 @@ B.brk=new A.V("Laki-laki",null,null,null,null,null,null,null,null,null,null)
 B.ZA=new A.iQ("laki-laki",B.adA,B.brk,t.Zx)
 B.aco=new A.bd(984491,"MaterialIcons",!1)
 B.ado=new A.b9(B.aco,null,null,null,null)
-B.boR=new A.V("Perempuan",null,null,null,null,null,null,null,null,null,null)
-B.ZB=new A.iQ("perempuan",B.ado,B.boR,t.Zx)
+B.boS=new A.V("Perempuan",null,null,null,null,null,null,null,null,null,null)
+B.ZB=new A.iQ("perempuan",B.ado,B.boS,t.Zx)
 B.b0T=s([B.ZA,B.ZB],t.CK)
 B.WS=new A.Ij(0,"topLeft")
 B.WV=new A.Ij(3,"bottomRight")
@@ -163302,22 +163303,22 @@ B.h4=new A.A(!0,null,null,null,null,null,15,B.U,null,null,null,null,null,null,nu
 B.bqs=new A.V("Pilih Absen",null,B.h4,null,null,null,null,null,null,null,null)
 B.b92=new A.N(B.hD,B.bqs,null)
 B.nt=new A.a2(0,32,0,0)
-B.bpc=new A.V("Belum ada kabilah.\nAdmin bisa menambah kabilah dengan tombol di bawah.",null,B.VM,B.a4,null,null,null,null,null,null,null)
-B.b93=new A.N(B.nt,B.bpc,null)
+B.bpd=new A.V("Belum ada kabilah.\nAdmin bisa menambah kabilah dengan tombol di bawah.",null,B.VM,B.a4,null,null,null,null,null,null,null)
+B.b93=new A.N(B.nt,B.bpd,null)
 B.a4f=new A.a2(0,0,8,0)
 B.b94=new A.N(B.a4f,B.vx,null)
 B.bqv=new A.V("Anggota tidak bisa dimuat.",null,B.ds,B.a4,null,null,null,null,null,null,null)
 B.b98=new A.N(B.nt,B.bqv,null)
 B.boI=new A.V("Rekap Nilai",null,B.h4,null,null,null,null,null,null,null,null)
 B.b99=new A.N(B.hD,B.boI,null)
-B.boW=new A.V("Tidak ada fitur admin yang diizinkan untukmu.",null,B.yq,null,null,null,null,null,null,null,null)
-B.b9a=new A.N(B.nA,B.boW,null)
+B.boX=new A.V("Tidak ada fitur admin yang diizinkan untukmu.",null,B.yq,null,null,null,null,null,null,null,null)
+B.b9a=new A.N(B.nA,B.boX,null)
 B.f7=new A.A(!0,B.aS,null,null,null,null,11,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null)
 B.brU=new A.V("Pilih sesi mengajar di atas \u2014 menyimpan menambah 1 kredit sesi itu ke rekap Anda.",null,B.f7,null,null,null,null,null,null,null,null)
 B.b9c=new A.N(B.ns,B.brU,null)
 B.a4g=new A.a2(0,16,0,16)
-B.boV=new A.V("Belum ada guru lain sekelompok dengan Anda.",null,B.fC,B.a4,null,null,null,null,null,null,null)
-B.b9d=new A.N(B.a4g,B.boV,null)
+B.boW=new A.V("Belum ada guru lain sekelompok dengan Anda.",null,B.fC,B.a4,null,null,null,null,null,null,null)
+B.b9d=new A.N(B.a4g,B.boW,null)
 B.a4e=new A.a2(0,0,3,0)
 B.acy=new A.b9(B.et,10,B.aS,null,null)
 B.b9e=new A.N(B.a4e,B.acy,null)
@@ -163339,8 +163340,8 @@ B.aK6=s([B.biV,B.bif,B.biS,B.bj1],t.R)
 B.afz=new A.jT(B.aK6,null)
 B.b9k=new A.N(B.nz,B.afz,null)
 B.b9l=new A.N(B.kM,B.dP,null)
-B.boU=new A.V("Belum ada anggota kabilah ini.",null,B.ds,B.a4,null,null,null,null,null,null,null)
-B.b9m=new A.N(B.nt,B.boU,null)
+B.boV=new A.V("Belum ada anggota kabilah ini.",null,B.ds,B.a4,null,null,null,null,null,null,null)
+B.b9m=new A.N(B.nt,B.boV,null)
 B.brx=new A.V("Murid tanpa tanda dihitung Hadir.",null,B.f7,null,null,null,null,null,null,null,null)
 B.b9n=new A.N(B.BI,B.brx,null)
 B.brp=new A.V("Belum ada murid di lokal ini.",null,B.fC,null,null,null,null,null,null,null,null)
@@ -163367,13 +163368,13 @@ B.bmh=new A.A(!0,B.aS,null,null,null,null,11.5,null,null,null,null,null,1.6,null
 B.brB=new A.V("\ud83d\udd12 Hanya admin yang bisa melihat halaman ini.\nLog mencatat setiap penambahan, perubahan, penghapusan data, dan guru yang masuk.\nEntri yang lebih dari 30 hari dihapus otomatis.",null,B.bmh,B.a4,null,null,null,null,null,null,null)
 B.a0m=new A.c3(B.Z,null,null,B.brB,null)
 B.b9w=new A.N(B.a4Z,B.a0m,null)
-B.bp8=new A.V("Tidak ada guru yang cocok.",null,B.ds,B.a4,null,null,null,null,null,null,null)
-B.b9x=new A.N(B.dU,B.bp8,null)
-B.bpU=new A.V("Belum ada murid di kelas ini.",null,B.fC,null,null,null,null,null,null,null,null)
-B.a0J=new A.c3(B.Z,null,null,B.bpU,null)
+B.bp9=new A.V("Tidak ada guru yang cocok.",null,B.ds,B.a4,null,null,null,null,null,null,null)
+B.b9x=new A.N(B.dU,B.bp9,null)
+B.bpV=new A.V("Belum ada murid di kelas ini.",null,B.fC,null,null,null,null,null,null,null,null)
+B.a0J=new A.c3(B.Z,null,null,B.bpV,null)
 B.b9y=new A.N(B.hE,B.a0J,null)
-B.bq4=new A.V("Belum ada pendaftar lain.",null,B.fC,null,null,null,null,null,null,null,null)
-B.a0M=new A.c3(B.Z,null,null,B.bq4,null)
+B.bq5=new A.V("Belum ada pendaftar lain.",null,B.fC,null,null,null,null,null,null,null,null)
+B.a0M=new A.c3(B.Z,null,null,B.bq5,null)
 B.b9z=new A.N(B.hE,B.a0M,null)
 B.a51=new A.a2(18,20,18,0)
 B.br1=new A.V("FITUR",null,B.h5,null,null,null,null,null,null,null,null)
@@ -163387,8 +163388,8 @@ B.biR=new A.bA("(rekap hanya 5 mapel: Tauhid, Fiqih, Nahwu, Sharaf, Tajwid). Nil
 B.ag6=s([B.bin,B.biR],t.R)
 B.afy=new A.jT(B.ag6,null)
 B.b9F=new A.N(B.kO,B.afy,null)
-B.bpo=new A.V("Tidak ada guru dengan nama itu.",null,B.mh,null,null,null,null,null,null,null,null)
-B.a0v=new A.c3(B.Z,null,null,B.bpo,null)
+B.bpp=new A.V("Tidak ada guru dengan nama itu.",null,B.mh,null,null,null,null,null,null,null,null)
+B.a0v=new A.c3(B.Z,null,null,B.bpp,null)
 B.P5=new A.N(B.BG,B.a0v,null)
 B.brD=new A.V("Belum ada murid yang berizin pulang.",null,B.mh,null,null,null,null,null,null,null,null)
 B.a0F=new A.c3(B.Z,null,null,B.brD,null)
@@ -163402,18 +163403,18 @@ B.acN=new A.b9(B.es,18,B.Q,null,null)
 B.b9K=new A.N(B.BW,B.acN,null)
 B.a5e=new A.a2(2,2,2,8)
 B.bk2=new A.A(!0,B.aD,null,null,null,null,11.5,null,null,null,null,null,1.5,null,null,null,null,null,null,null,null,null,null,null,null,null)
-B.bph=new A.V("\u26a0 Bila dihidupkan, admin ini bisa menambah & mencabut admin lain \u2014 hampir setara Admin Utama.",null,B.bk2,null,null,null,null,null,null,null,null)
-B.b9M=new A.N(B.a5e,B.bph,null)
+B.bpi=new A.V("\u26a0 Bila dihidupkan, admin ini bisa menambah & mencabut admin lain \u2014 hampir setara Admin Utama.",null,B.bk2,null,null,null,null,null,null,null,null)
+B.b9M=new A.N(B.a5e,B.bpi,null)
 B.a11=new A.n1(2,null,null,null,null,B.L,null,null,null,null)
 B.bgf=new A.bs(20,20,B.a11,null)
 B.b9N=new A.N(B.dn,B.bgf,null)
 B.blm=new A.A(!0,B.ep,null,null,null,null,12.5,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null)
-B.bpv=new A.V("\u2726  Fitur tambahan akan muncul di sini",null,B.blm,B.a4,null,null,null,null,null,null,null)
-B.a09=new A.c3(B.Z,null,null,B.bpv,null)
+B.bpw=new A.V("\u2726  Fitur tambahan akan muncul di sini",null,B.blm,B.a4,null,null,null,null,null,null,null)
+B.a09=new A.c3(B.Z,null,null,B.bpw,null)
 B.b9O=new A.N(B.BK,B.a09,null)
 B.r1=new A.A(!0,B.aS,null,null,null,null,12.5,null,null,null,null,null,1.5,null,null,null,null,null,null,null,null,null,null,null,null,null)
-B.bqg=new A.V("Guru yang mendaftar lewat web ini. Bila ada yang ternyata bukan guru dayah, keluarkan dia \u2014 biodatanya dihapus, dan akunnya bisa diblokir permanen bila perlu.",null,B.r1,null,null,null,null,null,null,null,null)
-B.b9Q=new A.N(B.dT,B.bqg,null)
+B.bqh=new A.V("Guru yang mendaftar lewat web ini. Bila ada yang ternyata bukan guru dayah, keluarkan dia \u2014 biodatanya dihapus, dan akunnya bisa diblokir permanen bila perlu.",null,B.r1,null,null,null,null,null,null,null,null)
+B.b9Q=new A.N(B.dT,B.bqh,null)
 B.b9R=new A.Pq(0,"natural")
 B.b9S=new A.Pq(1,"landscape")
 B.b9T=new A.Pq(2,"portrait")
@@ -163701,8 +163702,8 @@ B.bdF=new A.aS("/dialog-hapus-baris-rekap",null)
 B.bdG=new A.aS("/dialog-hapus-murid-satu",null)
 B.bvq=new A.afn(null)
 B.bg5=new A.bs(9,null,null,null)
-B.bpR=new A.V("Biodata",null,B.VC,null,null,null,null,null,null,null,null)
-B.b17=s([B.bvq,B.bg5,B.bpR],t.p)
+B.bpS=new A.V("Biodata",null,B.VC,null,null,null,null,null,null,null,null)
+B.b17=s([B.bvq,B.bg5,B.bpS],t.p)
 B.bdH=new A.Bi(B.bJ,B.u,B.w,B.C,null,B.dJ,null,0,B.b17,null)
 B.B1=new A.I(1,0.5607843137254902,0.6823529411764706,0.6196078431372549,B.E)
 B.adp=new A.b9(B.et,12,B.B1,null,null)
@@ -163994,13 +163995,13 @@ B.UJ=new A.bs(40,null,null,null)
 B.UK=new A.bs(4,null,null,null)
 B.bg2=new A.bs(5,null,null,null)
 B.r5=new A.A(!0,B.L,null,null,null,null,12,B.U,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null)
-B.bp5=new A.V("Cawu",null,B.r5,null,null,null,null,null,null,null,null)
-B.b8V=new A.N(B.cs,B.bp5,null)
+B.bp6=new A.V("Cawu",null,B.r5,null,null,null,null,null,null,null,null)
+B.b8V=new A.N(B.cs,B.bp6,null)
 B.a0p=new A.c3(B.Z,null,null,B.b8V,null)
 B.bg3=new A.bs(56,null,B.a0p,null)
 B.UL=new A.bs(7,null,null,null)
-B.bq1=new A.V(":",null,B.mh,null,null,null,null,null,null,null,null)
-B.b9b=new A.N(B.ul,B.bq1,null)
+B.bq2=new A.V(":",null,B.mh,null,null,null,null,null,null,null,null)
+B.b9b=new A.N(B.ul,B.bq2,null)
 B.bg4=new A.bs(10,null,B.b9b,null)
 B.dq=new A.bs(8,null,null,null)
 B.bg6=new A.bs(150,null,B.qe,null)
@@ -164019,8 +164020,8 @@ B.UN=new A.bs(16,16,B.As,null)
 B.bqI=new A.V("Nama Guru",null,B.VF,null,null,null,null,null,null,null,null)
 B.b97=new A.N(B.uo,B.bqI,null)
 B.bga=new A.bs(160,null,B.b97,null)
-B.bpB=new A.V("Hasil",null,B.r5,null,null,null,null,null,null,null,null)
-B.b9G=new A.N(B.cs,B.bpB,null)
+B.bpC=new A.V("Hasil",null,B.r5,null,null,null,null,null,null,null,null)
+B.b9G=new A.N(B.cs,B.bpC,null)
 B.a0D=new A.c3(B.Z,null,null,B.b9G,null)
 B.bgb=new A.bs(48,null,B.a0D,null)
 B.bgd=new A.bs(130,null,B.qe,null)
@@ -164049,8 +164050,8 @@ B.y7=new A.bs(null,7,null,null)
 B.aP=new A.bs(null,8,null,null)
 B.US=new A.bs(null,9,null,null)
 B.bgm=new A.bs(null,null,null,null)
-B.bpu=new A.V("Peringkat",null,B.yo,null,null,null,null,null,null,null,null)
-B.b9P=new A.N(B.cs,B.bpu,null)
+B.bpv=new A.V("Peringkat",null,B.yo,null,null,null,null,null,null,null,null)
+B.b9P=new A.N(B.cs,B.bpv,null)
 B.a0j=new A.c3(B.Z,null,null,B.b9P,null)
 B.bgn=new A.bs(64,null,B.a0j,null)
 B.bqA=new A.V("Rata",null,B.r5,null,null,null,null,null,null,null,null)
@@ -164619,108 +164620,108 @@ B.bmQ=new A.A(!0,B.L,null,null,null,null,14,null,null,null,null,null,null,null,n
 B.boF=new A.V("\u2726",null,B.bmQ,null,null,null,null,null,null,null,null)
 B.boG=new A.V("Simpan Perpanjangan",null,B.bh,null,null,null,null,null,null,null,null)
 B.boJ=new A.V("Hapus biodata?",null,null,null,null,null,null,null,null,null,null)
+B.a20=new A.I(1,0.4196078431372549,0.6039215686274509,0.5176470588235295,B.E)
+B.bmg=new A.A(!0,B.a20,null,null,null,null,11,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null)
+B.boK=new A.V("Versi 1.10.1",null,B.bmg,null,null,null,null,null,null,null,null)
 B.bky=new A.A(!0,B.W,null,null,null,null,12,B.cW,null,1,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null)
-B.boL=new A.V("\u2713 LUNAS",null,B.bky,null,null,null,null,null,null,null,null)
+B.boM=new A.V("\u2713 LUNAS",null,B.bky,null,null,null,null,null,null,null,null)
 B.blE=new A.A(!0,B.ab,null,null,null,null,16,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null)
-B.boM=new A.V("\u2605",null,B.blE,null,null,null,null,null,null,null,null)
-B.boN=new A.V("Batal",null,B.dt,null,null,null,null,null,null,null,null)
-B.boO=new A.V("Batal",null,B.mf,null,null,null,null,null,null,null,null)
-B.boQ=new A.V("Backup ke Drive",null,null,null,null,null,null,null,null,null,null)
-B.boS=new A.V("Tutup web sementara?",null,null,null,null,null,null,null,null,null,null)
-B.boT=new A.V("Pilih satu latar bawaan.",null,B.cC,null,null,null,null,null,null,null,null)
+B.boN=new A.V("\u2605",null,B.blE,null,null,null,null,null,null,null,null)
+B.boO=new A.V("Batal",null,B.dt,null,null,null,null,null,null,null,null)
+B.boP=new A.V("Batal",null,B.mf,null,null,null,null,null,null,null,null)
+B.boR=new A.V("Backup ke Drive",null,null,null,null,null,null,null,null,null,null)
+B.boT=new A.V("Tutup web sementara?",null,null,null,null,null,null,null,null,null,null)
+B.boU=new A.V("Pilih satu latar bawaan.",null,B.cC,null,null,null,null,null,null,null,null)
 B.bnX=new A.A(!0,B.ep,null,null,null,null,12,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null)
-B.boY=new A.V("Reset ini tercatat di Log Aktivitas.",null,B.bnX,null,null,null,null,null,null,null,null)
-B.bp_=new A.V("Otomatis dicatat ke KEAMANAN dengan tanda TIDAK ADA IZIN.",null,null,null,null,null,null,null,null,null,null)
-B.bp0=new A.V("Sinkron & Backup",null,null,null,null,null,null,null,null,null,null)
-B.bp2=new A.V("Tandai Pulang",null,null,null,null,null,null,null,null,null,null)
+B.boZ=new A.V("Reset ini tercatat di Log Aktivitas.",null,B.bnX,null,null,null,null,null,null,null,null)
+B.bp0=new A.V("Otomatis dicatat ke KEAMANAN dengan tanda TIDAK ADA IZIN.",null,null,null,null,null,null,null,null,null,null)
+B.bp1=new A.V("Sinkron & Backup",null,null,null,null,null,null,null,null,null,null)
+B.bp3=new A.V("Tandai Pulang",null,null,null,null,null,null,null,null,null,null)
 B.Vx=new A.A(!0,B.aS,null,null,null,null,11,null,null,1,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null)
-B.bp4=new A.V("BABUL HUDA OFFICIAL",null,B.Vx,null,null,null,null,null,null,null,null)
+B.bp5=new A.V("BABUL HUDA OFFICIAL",null,B.Vx,null,null,null,null,null,null,null,null)
 B.eg=new A.V("Coba lagi",null,null,null,null,null,null,null,null,null,null)
 B.bkn=new A.A(!0,B.ab,null,null,null,null,10,B.cW,null,1,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null)
 B.VX=new A.V("ADMIN",null,B.bkn,null,null,null,null,null,null,null,null)
-B.bp6=new A.V("Kredit masuk kolom Ganti di rekap guru",null,B.f7,null,null,null,null,null,null,null,null)
+B.bp7=new A.V("Kredit masuk kolom Ganti di rekap guru",null,B.f7,null,null,null,null,null,null,null,null)
 B.VK=new A.A(!0,B.cG,null,null,null,null,14,null,null,null,null,null,1.6,null,null,null,null,null,null,null,null,null,null,null,null,null)
-B.bp7=new A.V("Web BABUL HUDA OFFICIAL sedang ditutup sementara oleh admin.",null,B.VK,B.a4,null,null,null,null,null,null,null)
-B.bpa=new A.V("Login akun baru sedang dikunci oleh admin.\nAkun Gmail yang belum pernah terdaftar tidak bisa masuk untuk saat ini.",null,B.VK,B.a4,null,null,null,null,null,null,null)
-B.bpb=new A.V("Hapus izin ini?",null,null,null,null,null,null,null,null,null,null)
+B.bp8=new A.V("Web BABUL HUDA OFFICIAL sedang ditutup sementara oleh admin.",null,B.VK,B.a4,null,null,null,null,null,null,null)
+B.bpb=new A.V("Login akun baru sedang dikunci oleh admin.\nAkun Gmail yang belum pernah terdaftar tidak bisa masuk untuk saat ini.",null,B.VK,B.a4,null,null,null,null,null,null,null)
+B.bpc=new A.V("Hapus izin ini?",null,null,null,null,null,null,null,null,null,null)
 B.yw=new A.A(!0,B.dz,null,null,null,null,11,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null)
-B.bpd=new A.V("Admin",null,B.yw,null,null,null,null,null,null,null,null)
-B.bpe=new A.V("Daftar pendaftar belum bisa dimuat.\nPeriksa koneksi, lalu coba lagi.",null,null,B.a4,null,null,null,null,null,null,null)
-B.bpf=new A.V("Tambah Admin",null,null,null,null,null,null,null,null,null,null)
-B.bpg=new A.V("Pendaftar baru",null,B.Vw,null,null,null,null,null,null,null,null)
-B.bpi=new A.V("Ketuk tanggal untuk pindah hari",null,B.VT,null,null,null,null,null,null,null,null)
-B.bpj=new A.V("Belum pernah backup.",null,B.dt,null,null,null,null,null,null,null,null)
-B.bpk=new A.V("Log aktivitas belum bisa dimuat.\nPeriksa koneksi, lalu coba lagi.",null,null,B.a4,null,null,null,null,null,null,null)
-B.bpl=new A.V('Semua biodata (murid, guru, lokal) akan diunggah sebagai satu file JSON ke Google Drive Anda, di folder "Backup BABUL HUDA". Foto tidak termasuk.\n\nGoogle akan meminta izin akses Drive \u2014 aplikasi ini hanya bisa melihat file yang dibuatnya sendiri, tidak bisa melihat file Drive Anda yang lain.',null,null,null,null,null,null,null,null,null,null)
+B.bpe=new A.V("Admin",null,B.yw,null,null,null,null,null,null,null,null)
+B.bpf=new A.V("Daftar pendaftar belum bisa dimuat.\nPeriksa koneksi, lalu coba lagi.",null,null,B.a4,null,null,null,null,null,null,null)
+B.bpg=new A.V("Tambah Admin",null,null,null,null,null,null,null,null,null,null)
+B.bph=new A.V("Pendaftar baru",null,B.Vw,null,null,null,null,null,null,null,null)
+B.bpj=new A.V("Ketuk tanggal untuk pindah hari",null,B.VT,null,null,null,null,null,null,null,null)
+B.bpk=new A.V("Belum pernah backup.",null,B.dt,null,null,null,null,null,null,null,null)
+B.bpl=new A.V("Log aktivitas belum bisa dimuat.\nPeriksa koneksi, lalu coba lagi.",null,null,B.a4,null,null,null,null,null,null,null)
+B.bpm=new A.V('Semua biodata (murid, guru, lokal) akan diunggah sebagai satu file JSON ke Google Drive Anda, di folder "Backup BABUL HUDA". Foto tidak termasuk.\n\nGoogle akan meminta izin akses Drive \u2014 aplikasi ini hanya bisa melihat file yang dibuatnya sendiri, tidak bisa melihat file Drive Anda yang lain.',null,null,null,null,null,null,null,null,null,null)
 B.VY=new A.V("Profil Guru",null,null,null,null,null,null,null,null,null,null)
-B.bpm=new A.V("RETENSI DATA (K8)",null,B.h5,null,null,null,null,null,null,null,null)
-B.bpn=new A.V("Impor file lain",null,null,null,null,null,null,null,null,null,null)
-B.bpp=new A.V("Lihat KEAMANAN",null,null,null,null,null,null,null,null,null,null)
+B.bpn=new A.V("RETENSI DATA (K8)",null,B.h5,null,null,null,null,null,null,null,null)
+B.bpo=new A.V("Impor file lain",null,null,null,null,null,null,null,null,null,null)
+B.bpq=new A.V("Lihat KEAMANAN",null,null,null,null,null,null,null,null,null,null)
 B.ch=new A.V("Batal",null,null,null,null,null,null,null,null,null,null)
-B.bpq=new A.V("Belum Mengisi Jenis Kelamin",null,B.h4,null,null,null,null,null,null,null,null)
+B.bpr=new A.V("Belum Mengisi Jenis Kelamin",null,B.h4,null,null,null,null,null,null,null,null)
 B.jL=new A.V("Download Excel",null,null,null,null,null,null,null,null,null,null)
-B.bpr=new A.V("Pilih Foto",null,B.mc,null,null,null,null,null,null,null,null)
-B.bps=new A.V("Pilih semua",null,B.yu,null,null,null,null,null,null,null,null)
+B.bps=new A.V("Pilih Foto",null,B.mc,null,null,null,null,null,null,null,null)
+B.bpt=new A.V("Pilih semua",null,B.yu,null,null,null,null,null,null,null,null)
 B.bly=new A.A(!0,B.dz,null,null,null,null,11.5,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null)
-B.bpw=new A.V("Boleh dikosongkan bila tidak ada wali selain ayah.",null,B.bly,null,null,null,null,null,null,null,null)
+B.bpx=new A.V("Boleh dikosongkan bila tidak ada wali selain ayah.",null,B.bly,null,null,null,null,null,null,null,null)
 B.bnp=new A.A(!0,B.Y,null,null,null,null,26,B.U,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null)
-B.bpx=new A.V("!",null,B.bnp,null,null,null,null,null,null,null,null)
-B.bpy=new A.V("P \xb7 izin aktif",null,B.f7,null,null,null,null,null,null,null,null)
-B.bpz=new A.V("Detail Murid",null,null,null,null,null,null,null,null,null,null)
-B.bpA=new A.V("Lanjutkan",null,null,null,null,null,null,null,null,null,null)
-B.bpC=new A.V("Ubah Biodata",null,B.dt,null,null,null,null,null,null,null,null)
-B.bpF=new A.V("Potret langsung dengan kamera HP",null,null,null,null,null,null,null,null,null,null)
-B.bpG=new A.V("Jenis Kelamin",null,B.bh,null,null,null,null,null,null,null,null)
+B.bpy=new A.V("!",null,B.bnp,null,null,null,null,null,null,null,null)
+B.bpz=new A.V("P \xb7 izin aktif",null,B.f7,null,null,null,null,null,null,null,null)
+B.bpA=new A.V("Detail Murid",null,null,null,null,null,null,null,null,null,null)
+B.bpB=new A.V("Lanjutkan",null,null,null,null,null,null,null,null,null,null)
+B.bpD=new A.V("Ubah Biodata",null,B.dt,null,null,null,null,null,null,null,null)
+B.bpG=new A.V("Potret langsung dengan kamera HP",null,null,null,null,null,null,null,null,null,null)
+B.bpH=new A.V("Jenis Kelamin",null,B.bh,null,null,null,null,null,null,null,null)
 B.bnK=new A.A(!0,B.L,null,null,null,null,20,B.U,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null)
-B.bpH=new A.V("\u203a",null,B.bnK,null,null,null,null,null,null,null,null)
-B.bpI=new A.V("BABUL HUDA OFFICIAL \xb7 DAYAH SALAFY",null,B.Vx,null,null,null,null,null,null,null,null)
+B.bpI=new A.V("\u203a",null,B.bnK,null,null,null,null,null,null,null,null)
+B.bpJ=new A.V("BABUL HUDA OFFICIAL \xb7 DAYAH SALAFY",null,B.Vx,null,null,null,null,null,null,null,null)
 B.bkw=new A.A(!0,B.ab,null,null,null,null,11,B.U,null,0.5,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null)
 B.VZ=new A.V("GURU",null,B.bkw,null,null,null,null,null,null,null,null)
-B.bpJ=new A.V(" (opsional)",null,B.yw,null,null,null,null,null,null,null,null)
-B.bpK=new A.V("Status bayar tidak berubah \u2014 hanya label bulannya yang mengikuti pengaturan ini.",null,B.r0,null,null,null,null,null,null,null,null)
-B.bpL=new A.V("Peringatan \u2014 mohon diperiksa",null,B.bh,null,null,null,null,null,null,null,null)
-B.bpM=new A.V("Lengkapi biodata Anda sesuai KTP sebelum memakai web. Semua kolom wajib diisi.",null,null,null,null,null,null,null,null,null,null)
+B.bpK=new A.V(" (opsional)",null,B.yw,null,null,null,null,null,null,null,null)
+B.bpL=new A.V("Status bayar tidak berubah \u2014 hanya label bulannya yang mengikuti pengaturan ini.",null,B.r0,null,null,null,null,null,null,null,null)
+B.bpM=new A.V("Peringatan \u2014 mohon diperiksa",null,B.bh,null,null,null,null,null,null,null,null)
+B.bpN=new A.V("Lengkapi biodata Anda sesuai KTP sebelum memakai web. Semua kolom wajib diisi.",null,null,null,null,null,null,null,null,null,null)
 B.bkr=new A.A(!0,B.ab,null,null,null,null,9,B.cW,null,1,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null)
-B.bpN=new A.V("ADMIN",null,B.bkr,null,null,null,null,null,null,null,null)
-B.bpO=new A.V("Galeri",null,null,null,null,null,null,null,null,null,null)
-B.bpP=new A.V("Cabut",null,null,null,null,null,null,null,null,null,null)
-B.bpS=new A.V("Hanya Sakit dan Tidak hadir yang masuk pesan. Izin dan Pulang tidak dikirim.",null,B.r1,null,null,null,null,null,null,null,null)
-B.bpT=new A.V("Terakhir Masuk",null,null,null,null,null,null,null,null,null,null)
-B.bpV=new A.V("Rekap guru belum bisa dimuat.\nCoba lagi nanti.",null,null,B.a4,null,null,null,null,null,null,null)
+B.bpO=new A.V("ADMIN",null,B.bkr,null,null,null,null,null,null,null,null)
+B.bpP=new A.V("Galeri",null,null,null,null,null,null,null,null,null,null)
+B.bpQ=new A.V("Cabut",null,null,null,null,null,null,null,null,null,null)
+B.bpT=new A.V("Hanya Sakit dan Tidak hadir yang masuk pesan. Izin dan Pulang tidak dikirim.",null,B.r1,null,null,null,null,null,null,null,null)
+B.bpU=new A.V("Terakhir Masuk",null,null,null,null,null,null,null,null,null,null)
+B.bpW=new A.V("Rekap guru belum bisa dimuat.\nCoba lagi nanti.",null,null,B.a4,null,null,null,null,null,null,null)
 B.bjO=new A.A(!0,B.Y,null,null,null,null,28,B.cW,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null)
 B.W0=new A.V("!",null,B.bjO,null,null,null,null,null,null,null,null)
 B.mi=new A.A(!0,B.Q,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null)
-B.bpW=new A.V("Hapus kabilah?",null,B.mi,null,null,null,null,null,null,null,null)
+B.bpX=new A.V("Hapus kabilah?",null,B.mi,null,null,null,null,null,null,null,null)
 B.r6=new A.V("BABUL HUDA OFFICIAL",null,null,null,null,null,null,null,null,null,null)
-B.bpX=new A.V("Impor Excel",null,null,null,null,null,null,null,null,null,null)
-B.bq0=new A.V("Tambah Kabilah",null,B.mi,null,null,null,null,null,null,null,null)
+B.bpY=new A.V("Impor Excel",null,null,null,null,null,null,null,null,null,null)
+B.bq1=new A.V("Tambah Kabilah",null,B.mi,null,null,null,null,null,null,null,null)
 B.yy=new A.V("Buka Blokir",null,null,null,null,null,null,null,null,null,null)
 B.bmx=new A.A(!0,B.ab,null,null,null,null,11,B.U,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null)
 B.W1=new A.V("Anda",null,B.bmx,null,null,null,null,null,null,null,null)
-B.bq2=new A.V("Pilih Guru",null,B.mc,null,null,null,null,null,null,null,null)
-B.bq3=new A.V("Download Word",null,null,null,null,null,null,null,null,null,null)
-B.bq5=new A.V("Semua guru yang sedang di dalam akan dikeluarkan ke halaman tunggu. Akun mereka TIDAK keluar (logout) \u2014 mereka masuk lagi begitu web dibuka kembali.",null,null,null,null,null,null,null,null,null,null)
+B.bq3=new A.V("Pilih Guru",null,B.mc,null,null,null,null,null,null,null,null)
+B.bq4=new A.V("Download Word",null,null,null,null,null,null,null,null,null,null)
+B.bq6=new A.V("Semua guru yang sedang di dalam akan dikeluarkan ke halaman tunggu. Akun mereka TIDAK keluar (logout) \u2014 mereka masuk lagi begitu web dibuka kembali.",null,null,null,null,null,null,null,null,null,null)
 B.bik=new A.bA("Terlewati dihitung dari tanggal balek",null,null,B.a5,null,null,null,null,null,null,B.mg)
 B.bj5=new A.bA(" \u2014 menggeser tanggal menggeser batas terlambatnya.",null,null,B.a5,null,null,null,null,null,null,null)
 B.b32=s([B.bik,B.bj5],t.R)
 B.yr=new A.A(!0,B.cG,null,null,null,null,12.5,null,null,null,null,null,1.6,null,null,null,null,null,null,null,null,null,null,null,null,null)
 B.biq=new A.bA(null,B.b32,null,B.a5,null,null,null,null,null,null,B.yr)
-B.bq7=new A.V(null,B.biq,null,null,null,null,null,null,null,null,null)
-B.bq8=new A.V("Bagikan ke WA",null,B.dt,null,null,null,null,null,null,null,null)
-B.bq9=new A.V("Isi nama pengganti, lalu pilih guru yang digantikan di bawah. Tanda murid diisi dari kertas yang diserahkan pengganti.",null,B.r2,null,null,null,null,null,null,null,null)
-B.bqa=new A.V("Guru Online",null,null,null,null,null,null,null,null,null,null)
+B.bq8=new A.V(null,B.biq,null,null,null,null,null,null,null,null,null)
+B.bq9=new A.V("Bagikan ke WA",null,B.dt,null,null,null,null,null,null,null,null)
+B.bqa=new A.V("Isi nama pengganti, lalu pilih guru yang digantikan di bawah. Tanda murid diisi dari kertas yang diserahkan pengganti.",null,B.r2,null,null,null,null,null,null,null,null)
+B.bqb=new A.V("Guru Online",null,null,null,null,null,null,null,null,null,null)
 B.bkX=new A.A(!0,B.aD,null,null,null,null,13.5,B.U,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null)
-B.bqb=new A.V("Hapus Izin",null,B.bkX,null,null,null,null,null,null,null,null)
-B.bqc=new A.V("Pendaftar",null,null,null,null,null,null,null,null,null,null)
-B.bqd=new A.V("Lokal kosong ini akan dihapus dari daftar. Tidak ada murid di dalamnya.",null,null,null,null,null,null,null,null,null,null)
-B.bqe=new A.V("\u2039 Kembali",null,null,null,null,null,null,null,null,null,null)
-B.bqf=new A.V("Lokal",null,B.bh,null,null,null,null,null,null,null,null)
-B.bqi=new A.V("Hapus anggota?",null,B.mi,null,null,null,null,null,null,null,null)
-B.bqj=new A.V("Tambah Anggota",null,B.mi,null,null,null,null,null,null,null,null)
+B.bqc=new A.V("Hapus Izin",null,B.bkX,null,null,null,null,null,null,null,null)
+B.bqd=new A.V("Pendaftar",null,null,null,null,null,null,null,null,null,null)
+B.bqe=new A.V("Lokal kosong ini akan dihapus dari daftar. Tidak ada murid di dalamnya.",null,null,null,null,null,null,null,null,null,null)
+B.bqf=new A.V("\u2039 Kembali",null,null,null,null,null,null,null,null,null,null)
+B.bqg=new A.V("Lokal",null,B.bh,null,null,null,null,null,null,null,null)
+B.bqj=new A.V("Hapus anggota?",null,B.mi,null,null,null,null,null,null,null,null)
+B.bqk=new A.V("Tambah Anggota",null,B.mi,null,null,null,null,null,null,null,null)
 B.W2=new A.V("Tambah",null,null,null,null,null,null,null,null,null,null)
-B.a20=new A.I(1,0.4196078431372549,0.6039215686274509,0.5176470588235295,B.E)
-B.bmg=new A.A(!0,B.a20,null,null,null,null,11,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null)
-B.bqk=new A.V("Versi 1.10.0",null,B.bmg,null,null,null,null,null,null,null,null)
 B.bql=new A.V("Hapus Sekarang",null,null,null,null,null,null,null,null,null,null)
 B.bqm=new A.V("Keluarkan Pengguna",null,B.dt,null,null,null,null,null,null,null,null)
 B.bqn=new A.V("Selamat datang! Sebelum memakai web ini, lengkapi dulu biodata Anda. Biodata ini bisa dilihat sesama guru sejenis kelamin dan admin \u2014 hanya Anda (dan admin) yang bisa mengubahnya.",null,null,null,null,null,null,null,null,null,null)
