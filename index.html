@@ -45,6 +45,18 @@
     sejak v1.7.0, jadi CSP tidak perlu diubah sama sekali.
   -->
   <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self' 'unsafe-inline' 'unsafe-eval' https://apis.google.com https://accounts.google.com https://www.gstatic.com; connect-src 'self' blob: https://*.googleapis.com https://*.firebaseapp.com https://*.firebaseio.com wss://*.googleapis.com wss://*.firebaseio.com https://accounts.google.com https://apis.google.com https://*.supabase.co wss://*.supabase.co https://www.gstatic.com https://fonts.gstatic.com; img-src 'self' data: https:; media-src 'self' data:; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com; font-src 'self' data: https://fonts.gstatic.com; frame-src https://accounts.google.com; worker-src 'self'; object-src 'none'; base-uri 'self'; form-action 'self'; upgrade-insecure-requests">
+  <!--
+    Preconnect (v1.10.0 — kecepatan muat awal): membuka koneksi
+    TLS lebih awal ke host yang pasti dipakai sesaat lagi —
+    CanvasKit (www.gstatic.com), font Roboto (fonts.gstatic.com,
+    diambil dengan CORS anonim sehingga crossorigin wajib), dan
+    origin Supabase live (REST + Realtime). Ketiganya sudah
+    diizinkan connect-src CSP di atas; preconnect tidak
+    melanggar CSP dan tidak memuat data apa pun.
+  -->
+  <link rel="preconnect" href="https://www.gstatic.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="preconnect" href="https://hsfziomccqfwhhiuqrge.supabase.co" crossorigin>
   <script>
     // Frame-busting: web BABUL HUDA tidak pernah di-frame di mana pun.
     // Bila dibuka di dalam frame (clickjacking), keluar dari frame.
