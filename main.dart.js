@@ -79683,7 +79683,7 @@ A.Ge.prototype={
 B(a){var s=this,r=null,q=A.pg(a).ac7(A.db([B.c8,B.e1,B.d1,B.dg],t.Au),!1),p=s.ay,o=t.p,n=A.b([new A.agt(s.c,s.w,new A.aGb(s),new A.aGc(s),r),new A.ags(A.b([new A.agj(B.vS,"Profil Saya","Lihat & ubah biodata",s.cx,r)],o),r),B.bzl],o)
 if(s.d)n.push(new A.acT(s.e,s.f,s.r,s.x,s.y,s.z,s.Q,s.as,s.at,s.ax,s.db,s.dx,s.dy,s.fr,s.fx,s.cy,s.fy,s.go,s.id,s.k1,s.k2,s.k3,s.k4,s.ok,s.p1,r))
 q=A.aJ(A.bsv(q,A.aPh(A.dc(new A.ij(A.a_(n,B.bS,B.t,B.v),720,r),p,r,B.d6,B.ak),p,B.fD,4,!0)),1)
-p=A.b([A.G("BABUL HUDA OFFICIAL \xb7 Versi 1.10.17",r,r,r,r,r,B.bmg,B.a4,r,r)],o)
+p=A.b([A.G("BABUL HUDA OFFICIAL \xb7 Versi 1.10.18",r,r,r,r,r,B.bmg,B.a4,r,r)],o)
 if(s.p2)p.push(new A.J(B.Ck,A.hl(r,B.bsp,B.af,!1,r,r,r,r,r,r,r,r,r,r,r,r,r,r,s.p3,r,r,r,r,r,r),r))
 return A.a_(A.b([new A.afJ(new A.aGd(a),r),q,new A.J(B.a66,A.a_(p,B.z,B.t,B.v),r)],o),B.z,B.t,B.v)}}
 A.aGd.prototype={
@@ -167558,7 +167558,7 @@ B.bvl=new A.U("Hubungi Admin",null,B.ir,null,null,null,null,null,null,null,null)
 B.bvm=new A.U("Arsip Statistik Bulanan",null,B.ir,null,null,null,null,null,null,null,null)
 B.a31=new A.I(1,0.4196078431372549,0.6039215686274509,0.5176470588235295,B.E)
 B.bpm=new A.A(!0,B.a31,null,null,null,null,11,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null)
-B.bvn=new A.U("Versi 1.10.17",null,B.bpm,null,null,null,null,null,null,null,null)
+B.bvn=new A.U("Versi 1.10.18",null,B.bpm,null,null,null,null,null,null,null,null)
 B.bvo=new A.U("Kelas",null,B.bi,null,null,null,null,null,null,null,null)
 B.bvp=new A.U("Kelas sudah dinaikkan tahun ini.",null,B.ir,null,null,null,null,null,null,null,null)
 B.bvr=new A.U("Ubah \u203a",null,B.Wl,null,null,null,null,null,null,null,null)
